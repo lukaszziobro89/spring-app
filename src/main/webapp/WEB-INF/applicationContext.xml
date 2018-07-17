@@ -13,8 +13,8 @@
         <property name="prefix" value="/WEB-INF/view/" />
         <property name="suffix" value=".jsp" />
     </bean>
-    <!--<bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>-->
-    <!--<bean id='validator' class='org.springframework.validation.beanvalidation.LocalValidatorFactoryBean'/>-->
+    <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
+    <bean id='validator' class='org.springframework.validation.beanvalidation.LocalValidatorFactoryBean'/>
 
 
 
