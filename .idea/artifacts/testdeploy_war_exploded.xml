@@ -6,6 +6,26 @@
         <element id="directory" name="classes">
           <element id="module-output" name="testdeploy" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:5.0.6.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aspects:5.0.6.RELEASE" />
+          <element id="library" level="project" name="Maven: org.aspectj:aspectjweaver:1.8.13" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:5.0.6.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:5.0.6.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context-support:4.3.9.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:5.0.6.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:5.0.6.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.0.6.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-messaging:4.3.9.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-orm:5.0.6.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:5.0.6.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-tx:5.0.6.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-test:5.0.6.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-web:5.0.6.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:5.0.6.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-websocket:4.3.9.RELEASE" />
+          <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:3.1.0" />
+        </element>
       </element>
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/target/testdeploy/META-INF/MANIFEST.MF" />

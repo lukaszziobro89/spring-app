@@ -3,5 +3,9 @@
 <h2>Hello World!</h2>
 <br><br>
 <h2>17/07/2018</h2>
+<br><br>
+
+<form action="showForm"><input type="submit" class="btn success" value="Various"/></form>
+
 </body>
 </html>
