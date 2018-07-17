@@ -1,7 +1,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}resources/css/my-test.css">
+    <%@ page isELIgnored="false" %>
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/my-test.css">
     <script src="${pageContext.request.contextPath}/resources/js/simple-test.js"></script>
 </head>
 <body>
@@ -14,7 +15,7 @@
     Welcome to Web Spring App!
 </h2>
 <p style="text-align:center;">
-    <img src="${pageContext.request.contextPath}resources/images/spring_logo.png"/>
+    <img src="${pageContext.request.contextPath}/resources/images/spring_logo.png"/>
 </p>
 
 <form action="showForm"><input type="submit" class="btn success" value="Various"/></form>
