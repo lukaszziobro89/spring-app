@@ -24,6 +24,13 @@
     <input type="submit" value="Show weekday name"/>
 </form>
 
+<p style="text-align:center;">
+    <input type="submit" onclick="doSomeWork()" value="Simple alert"/>
+</p>
+<p style="text-align:center;">
+    <input type="submit" onclick="printTime()" value="Get time"/>
+</p>
+
 <br><br><br>
 <a href="<%=request.getContextPath() %>/">Back to home page</a>
 

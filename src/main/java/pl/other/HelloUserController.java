@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.validation.constraints.NotNull;
 
 @Controller
 public class HelloUserController {
@@ -40,7 +39,6 @@ public class HelloUserController {
 
     @RequestMapping(value = "/showDayName")
     public String showWeekdayName(
-            @NotNull(message = "Put day number (1-7)")
             @RequestParam("weekNumber") Integer weekNumber,
             Model model){
         String dayName;

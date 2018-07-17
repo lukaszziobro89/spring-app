@@ -1,5 +1,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
+<head>
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/my-test.css">
+    <script src="${pageContext.request.contextPath}/resources/js/simple-test.js"></script>
+</head>
 <body>
 <h2>Hello World!</h2>
 <br><br>
