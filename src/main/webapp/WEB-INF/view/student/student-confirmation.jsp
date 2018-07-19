@@ -9,17 +9,15 @@
 <body>
 
 <h2>
-    Student added to database!
+    Student correctly added to database!
 </h2>
-<br>
-ID: ${student.id}
+
 <br>
 First name: ${firstName}
 <br>
 Last name: ${lastName}
 <br>
 Email: ${email}
-
 
 </body>
 </html>
