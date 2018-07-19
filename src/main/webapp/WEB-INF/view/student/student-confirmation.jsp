@@ -20,5 +20,8 @@ Last name: ${lastName}
 <br>
 Email: ${email}
 
+<br><br><br>
+<form action="<%=request.getContextPath() %>/"><input type="submit" class="btn success" value="Back"/></form>
+
 </body>
 </html>

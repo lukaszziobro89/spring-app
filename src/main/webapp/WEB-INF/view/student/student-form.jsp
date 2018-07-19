@@ -6,6 +6,7 @@
     <style>
         .error {color:red}
     </style>
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/my-test.css">
 </head>
 <body>
 
@@ -21,6 +22,9 @@
     <br><br>
     <input type="submit" value="Submit"/>
 </form:form>
+
+<br><br><br>
+<form action="<%=request.getContextPath() %>/"><input type="submit" class="btn success" value="Back"/></form>
 
 </body>
 </html>

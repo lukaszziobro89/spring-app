@@ -2,6 +2,7 @@
 <html>
 <head>
     <%@ page isELIgnored="false" %>
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/my-test.css">
     <title>Hello User Page</title>
 </head>
 <body>

@@ -2,6 +2,7 @@
 <html>
 <head>
     <%@ page isELIgnored="false" %>
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/my-test.css">
     <title>Hello User</title>
 </head>
 <body>
@@ -16,7 +17,8 @@
 
     <br><br><br>
 
-    <a href="showForm">Back</a>
+<br><br><br>
+<form action="<%=request.getContextPath() %>/"><input type="submit" class="btn success" value="Back"/></form>
 
 </body>
 </html>
