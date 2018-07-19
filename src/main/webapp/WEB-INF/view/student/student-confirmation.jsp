@@ -11,7 +11,7 @@
 <br>
 ID: ${student.id}
 <br>
-First name: ${firstName}
+First name: ${student.firstName}
 <br>
 Last name: ${lastName}
 <br>
