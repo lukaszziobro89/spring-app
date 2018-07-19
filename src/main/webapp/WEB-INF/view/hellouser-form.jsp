@@ -27,7 +27,7 @@
 
 
 <br><br><br>
-<a href="<%=request.getContextPath() %>/">Back to home page</a>
+<form action="<%=request.getContextPath() %>/"><input type="submit" class="btn success" value="Back"/></form>
 
 </body>
 </html>
