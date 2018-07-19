@@ -6,11 +6,6 @@
     <script src="${pageContext.request.contextPath}/resources/js/simple-test.js"></script>
 </head>
 <body>
-<h2>Hello World!</h2>
-<br><br>
-<h2>17/07/2018</h2>
-<br><br>
-
 <h2>
     Welcome to Web Spring App!
 </h2>
@@ -19,6 +14,7 @@
 </p>
 
 <form action="showForm"><input type="submit" class="btn success" value="Various"/></form>
+<form action="addStudent"><input type="submit" class="btn success" value="Student form"/></form>
 
 <p style="text-align:center;">
     <input type="submit" onclick="doSomeWork()" value="Simple alert"/>
