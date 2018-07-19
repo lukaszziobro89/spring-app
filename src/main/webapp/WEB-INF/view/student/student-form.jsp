@@ -10,9 +10,6 @@
 <body>
 
 <form:form action="processStudent" modelAttribute="student" method="get">
-    Id: <form:input path="id"/>
-    <form:errors path="id" cssClass="error"/>
-    <br><br>
     First name: <form:input path="firstName"/>
     <form:errors path="firstName" cssClass="error"/>
     <br><br>
