@@ -4,6 +4,7 @@
 <html>
 <head>
     <%@ page isELIgnored="false" %>
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/my-test.css">
     <title>Student Confirmation</title>
 </head>
 <body>
