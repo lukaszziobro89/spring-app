@@ -4,7 +4,10 @@
 <html>
 <head>
     <meta charset="UTF-8">
+
     <title>Title</title>
+    <%--<link rel="icon" type="image/png" href="resources/spring_icon.png" sizes="32x32">--%>
+
     <style>
         #results {
             font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;

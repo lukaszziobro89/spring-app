@@ -4,6 +4,7 @@
     <%@ page isELIgnored="false" %>
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/my-test.css">
     <script src="${pageContext.request.contextPath}/resources/js/simple-test.js"></script>
+    <link rel="icon" type="image/png" href="resources/spring_icon.png" sizes="32x32">
 </head>
 <body>
 <h2>

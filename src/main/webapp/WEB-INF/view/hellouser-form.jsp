@@ -3,6 +3,7 @@
 <head>
     <%@ page isELIgnored="false" %>
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/my-test.css">
+    <link rel="icon" type="image/png" href="resources/spring_icon.png" sizes="32x32">
     <title>Hello User Page</title>
 </head>
 <body>

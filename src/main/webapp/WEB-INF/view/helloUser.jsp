@@ -2,7 +2,9 @@
 <html>
 <head>
     <%@ page isELIgnored="false" %>
+    <link rel="icon" type="image/png" href="resources/spring_icon.png" sizes="32x32">
     <title>Hello User</title>
+
 </head>
 <body>
     Hello World!
