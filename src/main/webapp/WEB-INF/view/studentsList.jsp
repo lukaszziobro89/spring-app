@@ -7,32 +7,33 @@
 
     <title>Students list</title>
     <link rel="icon" type="image/png" href="resources/spring_icon.png" sizes="32x32">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/my-test.css">
 
-    <style>
-        #results {
-            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-            border-collapse: collapse;
-            width: 100%;
-        }
+    <%--<style>--%>
+        <%--#results {--%>
+            <%--font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;--%>
+            <%--border-collapse: collapse;--%>
+            <%--width: 100%;--%>
+        <%--}--%>
 
-        #results td, #results th {
-            border: 1px solid #ddd;
-            padding: 8px;
-        }
+        <%--#results td, #results th {--%>
+            <%--border: 1px solid #ddd;--%>
+            <%--padding: 8px;--%>
+        <%--}--%>
 
-        #results tr:nth-child(even){background-color: #f2f2f2;}
+        <%--#results tr:nth-child(even){background-color: #f2f2f2;}--%>
 
-        #results tr:hover {background-color: #ddd;}
+        <%--#results tr:hover {background-color: #ddd;}--%>
 
-        #results th {
-            padding-top: 12px;
-            padding-bottom: 12px;
-            text-align: left;
-            background-color: #4CAF50;
-            color: white;
-        }
+        <%--#results th {--%>
+            <%--padding-top: 12px;--%>
+            <%--padding-bottom: 12px;--%>
+            <%--text-align: left;--%>
+            <%--background-color: #4CAF50;--%>
+            <%--color: white;--%>
+        <%--}--%>
 
-    </style>
+    <%--</style>--%>
 </head>
 <body>
 

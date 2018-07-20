@@ -3,9 +3,9 @@
 <html>
 <head>
     <title>User Page</title>
-    <style>
-        .error {color:red}
-    </style>
+    <%--<style>--%>
+        <%--.error {color:red}--%>
+    <%--</style>--%>
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/my-test.css">
 </head>
 <body>
