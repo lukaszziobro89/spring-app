@@ -42,7 +42,7 @@
             <th>Last Name</th>
             <th>Email</th>
         </tr>
-        <c:forEach items="${lists}" var="student" >
+        <c:forEach items="${studentsLists}" var="student" >
             <tr>
                 <td>${student.id}</td>
                 <td>${student.firstName}</td>
