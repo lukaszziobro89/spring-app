@@ -127,7 +127,7 @@ public class StudentController {
             factory.close();
         }
 
-        return "table";
+        return "studentsList";
     }
 
 

@@ -14,7 +14,7 @@
 Student name: ${param.userName}
 </p>
     <br><br><br>
-
+    <form class="left_align" action="showForm"><input type="submit" class="btn success" value="Back"/></form>
     <form class="left_align" action="<%=request.getContextPath() %>/"><input type="submit" class="btn success" value="Home page"/></form>
 
 
