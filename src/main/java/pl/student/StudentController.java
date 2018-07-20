@@ -10,14 +10,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.WebDataBinder;
-import org.springframework.web.bind.annotation.InitBinder;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.util.List;
 
 @Controller
 public class StudentController {
@@ -97,39 +95,39 @@ public class StudentController {
             return "student/student-confirmation";
         }
 
-//        Connection.setConnection();
-//        SessionFactory factory;
-//        Configuration configuration = new Configuration();
-//        configuration.configure("hibernate.cfg.xml").addAnnotatedClass(Student.class);
-//        ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder().applySettings(configuration.getProperties()).build();
-//        factory = configuration.buildSessionFactory(serviceRegistry);
-//        Session session = factory.getCurrentSession();
-//
-//        // connection details
-//        String jdbcURL = "jdbc:mysql://localhost:3306/hb_student_tracker?useSSL=false";
-//        String user = "hbstudent";
-//        String pass = "hbstudent";
-//
-//        System.out.println("connected.");
-//        try {
-//            System.out.println("Creating new student...");
-////            Student student = new Student("John", "Adams","mail@mail.com");
-//            Student student = new Student();
-//            student.setId(id);
-//            student.setFirstName(firstName);
-//            student.setLastName(lastName);
-//            student.setEmail(email);
-//            session.beginTransaction();
-//            System.out.println("Saving student...");
-//            session.save(student);
-//            session.getTransaction().commit();
-//            System.out.println("Done!");
-//        }catch (Exception exc){
-//            exc.printStackTrace();
-//        }finally {
-//            factory.close();
-//        }
-//        return "student-confirmation";
+    }
+
+    @RequestMapping(value = "/showStudents", method = RequestMethod.GET)
+    public String showTable(Model theModel){
+
+        SessionFactory factory;
+        Configuration configuration = new Configuration();
+        configuration.configure("hibernate.cfg.xml").addAnnotatedClass(Student.class);
+        ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder().applySettings(configuration.getProperties()).build();
+        factory = configuration.buildSessionFactory(serviceRegistry);
+        Session session = factory.getCurrentSession();
+
+        String jdbcURL = "jdbc:mysql://sql.lukaszziobro.nazwa.pl:3306/lukaszziobro_javaspring?useSSL=false";
+        String user = "lukaszziobro_javaspring";
+        String pass = "London.11";
+
+        try{
+            System.out.println("Connecting...");
+            Connection connection = DriverManager.getConnection(jdbcURL, user, pass);
+
+            session.beginTransaction();
+            List<Student> theStudents = session.createQuery("from Student").list();
+            session.getTransaction().commit();
+
+            theModel.addAttribute("studentsLists",theStudents);
+
+        } catch (Exception ex){
+            ex.printStackTrace();
+        } finally {
+            factory.close();
+        }
+
+        return "table";
     }
 
 

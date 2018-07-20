@@ -14,7 +14,8 @@
 </p>
 
 <form action="showForm"><input type="submit" class="btn success" value="Various"/></form>
-<form action="addStudent"><input type="submit" class="btn success" value="Student form"/></form>
+<form action="addStudent"><input type="submit" class="btn success" value="Add student"/></form>
+<form action="showStudents"><input type="submit" class="btn success" value="Show students list"/></form>
 
 <p style="text-align:center;">
     <input type="submit" onclick="doSomeWork()" value="Simple alert"/>
