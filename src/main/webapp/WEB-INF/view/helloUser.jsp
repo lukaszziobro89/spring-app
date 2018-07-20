@@ -2,6 +2,7 @@
 <html>
 <head>
     <%@ page isELIgnored="false" %>
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/my-test.css">
     <link rel="icon" type="image/png" href="resources/spring_icon.png" sizes="32x32">
     <title>Hello User</title>
 
@@ -14,7 +15,7 @@ Student name: ${param.userName}
 </p>
     <br><br><br>
 
-    <a href="showForm">Back</a>
+    <form class="left_align" action="<%=request.getContextPath() %>/"><input type="submit" class="btn success" value="Home page"/></form>
 
 
 </body>

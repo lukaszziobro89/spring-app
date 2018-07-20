@@ -16,6 +16,11 @@ form{
     text-align:center;
 }
 
+form.left_align{
+    text-align:center;
+}
+
+
 .btn {
     border: 2px solid black;
     background-color: white;
