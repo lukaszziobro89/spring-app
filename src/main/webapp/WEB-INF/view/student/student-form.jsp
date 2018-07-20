@@ -18,7 +18,6 @@
     Email: <form:input path="email"/>
     <form:errors path="email" cssClass="error"/>
     <br><br>
-    <%--<input type="submit" value="Submit"/>--%>
     <form class="left_align"><input type="submit" class="btn success" value="Submit"></form>
 </form:form>
 
