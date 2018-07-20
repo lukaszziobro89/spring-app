@@ -2,11 +2,9 @@
 
 <html>
 <head>
-    <title>User Page</title>
-    <%--<style>--%>
-        <%--.error {color:red}--%>
-    <%--</style>--%>
+    <%@ page isELIgnored="false" %>
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/my-test.css">
+    <title>Student Page</title>
 </head>
 <body>
 
@@ -25,8 +23,8 @@
 </form:form>
 
 <br><br><br>
-<form class="left_align" action="<%=request.getContextPath() %>"><input type="submit" class="btn success" value="Back"/></form>
-<form class="left_align" action="<%=request.getContextPath() %>"><input type="submit" class="btn success" value="Home page"/></form>
+
+<form class="left_align" action="<%=request.getContextPath() %>/"><input type="submit" class="btn success" value="Home page"/></form>
 
 </body>
 </html>
