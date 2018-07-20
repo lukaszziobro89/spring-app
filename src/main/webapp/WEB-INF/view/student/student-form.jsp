@@ -21,12 +21,12 @@
     <form:errors path="email" cssClass="error"/>
     <br><br>
     <%--<input type="submit" value="Submit"/>--%>
-    <form class="left_align"><input type="submit" class="btn success" value="Submit"/></form>
+    <form class="left_align"><input type="submit" class="btn success" value="Submit"></form>
 </form:form>
 
 <br><br><br>
-<form class="left_align" action="<%=request.getContextPath() %>/"><input type="submit" class="btn success" value="Back"/></form>
-<form class="left_align" action="<%=request.getContextPath() %>/"><input type="submit" class="btn success" value="Home page"/></form>
+<form class="left_align" action="<%=request.getContextPath() %>"><input type="submit" class="btn success" value="Back"/></form>
+<form class="left_align" action="<%=request.getContextPath() %>"><input type="submit" class="btn success" value="Home page"/></form>
 
 </body>
 </html>
