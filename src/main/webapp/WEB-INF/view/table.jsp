@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
 
-    <title>Title</title>
+    <title>Students list</title>
     <link rel="icon" type="image/png" href="resources/spring_icon.png" sizes="32x32">
 
     <style>
@@ -55,6 +55,9 @@
         </c:forEach>
     </table>
 
+<br><br>
+    <form action="addStudent"><input type="submit" class="btn success" value="Back"/></form>
+    <form action="<%=request.getContextPath() %>/"><input type="submit" class="btn success" value="Home page"/></form>
 
 </body>
 </html>

@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="afb0e3ea-5e6f-449a-ad9e-2fefd832d9f3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/table.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/table.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="afb0e3ea-5e6f-449a-ad9e-2fefd832d9f3" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,7 +25,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/table.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -317,12 +315,12 @@
       <workItem from="1531828508406" duration="5524000" />
       <workItem from="1531913607941" duration="725000" />
       <workItem from="1531986504507" duration="10464000" />
-      <workItem from="1532080543568" duration="7825000" />
+      <workItem from="1532080543568" duration="8070000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30997000" />
+    <option name="totallyTimeSpent" value="31242000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1536" height="864" extended-state="6" />
@@ -348,7 +346,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.7233502" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.7233502" />
       <window_info id="Persistence" order="3" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21342282" />
       <window_info anchor="right" id="Bean Validation" order="3" />
@@ -602,7 +600,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/table.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>

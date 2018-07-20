@@ -5,7 +5,7 @@
 <head>
     <%@ page isELIgnored="false" %>
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/my-test.css">
-    <title>Student Confirmation</title>
+    <title>Confirmation</title>
 </head>
 <body>
 
@@ -21,7 +21,8 @@ Last name: ${lastName}
 Email: ${email}
 
 <br><br><br>
-<form action="<%=request.getContextPath() %>/"><input type="submit" class="btn success" value="Back"/></form>
+<form action="showStudents"><input type="submit" class="btn success" value="Show students list"/></form>
+<form action="<%=request.getContextPath() %>/"><input type="submit" class="btn success" value="Home page"/></form>
 
 </body>
 </html>

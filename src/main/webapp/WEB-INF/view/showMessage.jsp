@@ -20,6 +20,7 @@
 
 <br><br><br>
 <form action="<%=request.getContextPath() %>/"><input type="submit" class="btn success" value="Back"/></form>
+<form action="<%=request.getContextPath() %>/"><input type="submit" class="btn success" value="Home page"/></form>
 
 </body>
 </html>
