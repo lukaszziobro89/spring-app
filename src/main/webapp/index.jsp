@@ -12,6 +12,7 @@
 </h2>
 <p style="text-align:center;">
     <img src="${pageContext.request.contextPath}/resources/images/spring_logo.png"/>
+    <img src="${pageContext.request.contextPath}/resources/images/hibernate_logo.png"/>
 </p>
 
 <form class="center_align" action="showForm"><input type="submit" class="btn success" value="Various"/></form>
