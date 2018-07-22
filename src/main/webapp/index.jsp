@@ -8,7 +8,7 @@
 </head>
 <body>
 <h2>
-    Simple Spring/Hibernate Web Application
+    Spring/Hibernate Web Application
 </h2>
 <p style="text-align:center;">
     <img src="${pageContext.request.contextPath}/resources/images/spring_logo.png"/>
