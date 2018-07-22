@@ -8,11 +8,11 @@
 </head>
 <body>
 <h2>
-    Welcome to Web Spring App!
+    Simple Spring/Hibernate Web Application
 </h2>
 <p style="text-align:center;">
     <img src="${pageContext.request.contextPath}/resources/images/spring_logo.png"/>
-    <img src="${pageContext.request.contextPath}/resources/images/hibernate_logo.png" height="162" width="400"/>
+    <img src="${pageContext.request.contextPath}/resources/images/hibernate_logo.png" height="150" width="450"/>
 </p>
 
 <form class="center_align" action="showForm"><input type="submit" class="btn success" value="Various"/></form>
