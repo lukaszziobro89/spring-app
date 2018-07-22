@@ -10,6 +10,7 @@ h2 {
 p {
     font-family: Verdana;
     font-size: 15px;
+    text-align: center;
 }
 
 form{
@@ -19,6 +20,11 @@ form{
 form.left_align{
     text-align:left;
 }
+
+form.center_align{
+    text-align:center;
+}
+
 
 .error {color:red}
 

@@ -14,9 +14,9 @@
     <img src="${pageContext.request.contextPath}/resources/images/spring_logo.png"/>
 </p>
 
-<form action="showForm"><input type="submit" class="btn success" value="Various"/></form>
-<form action="addStudent"><input type="submit" class="btn success" value="Add student"/></form>
-<form action="showStudents"><input type="submit" class="btn success" value="Show students list"/></form>
+<form class="center_align" action="showForm"><input type="submit" class="btn success" value="Various"/></form>
+<form class="center_align" action="addStudent"><input type="submit" class="btn success" value="Add student"/></form>
+<form class="center_align" action="showStudents"><input type="submit" class="btn success" value="Show students list"/></form>
 
 <p style="text-align:center;">
     <input type="submit" onclick="doSomeWork()" value="Simple alert"/>
