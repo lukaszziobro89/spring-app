@@ -16,8 +16,8 @@
 </p>
 
 <form class="center_align" action="showForm"><input type="submit" class="btn success" value="Various"/></form>
-<form class="center_align" action="addStudent"><input type="submit" class="btn success" value="Add student"/></form>
-<form class="center_align" action="showStudents"><input type="submit" class="btn success" value="Show students list"/></form>
+<form class="center_align" action="addStudent" method="post"><input type="submit" class="btn success" value="Add student"/></form>
+<form class="center_align" action="showStudents" method="get"><input type="submit" class="btn success" value="Show students list"/></form>
 
 <p style="text-align:center;">
     <input type="submit" onclick="doSomeWork()" value="Simple alert"/>
