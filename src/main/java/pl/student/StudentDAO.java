@@ -10,11 +10,10 @@ import java.util.List;
 
 public interface StudentDAO {
     List<Student> getStudents();
-    String processStudent(@RequestParam("firstName") String firstName,
-                          @RequestParam("lastName") String lastName,
-                          @RequestParam("email") String email,
-                          @Valid
-                          @ModelAttribute("student") Student theStudent,
+    String processStudent(String firstName,
+                          String lastName,
+                          String email,
+                          Student theStudent,
                           BindingResult theBindingResult,
                           Model theModel);
 }
