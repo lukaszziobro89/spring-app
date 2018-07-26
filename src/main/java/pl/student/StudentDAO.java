@@ -1,11 +1,13 @@
 package pl.student;
 
 import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
 import java.util.List;
 
 public interface StudentDAO {
+    /** Return list of students  */
     List<Student> getStudents();
+
+    /** Add new student to database */
     Student saveStudent(String firstName,
                         String lastName,
                         String email,
