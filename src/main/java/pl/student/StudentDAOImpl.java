@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.RequestMapping;
 import java.util.List;
 
 @Repository
@@ -37,63 +36,31 @@ public class StudentDAOImpl implements StudentDAO{
         return students;
     }
 
-
     @Transactional
-    public Student processStudent(
+    public Student saveStudent(
             String firstName,
             String lastName,
             String email,
             Student theStudent,
             Model theModel){
 
+            // retrieve current session
             Session currentSession = sessionFactory.getCurrentSession();
 
+            // convert data to upper case names
             firstName = firstName.toUpperCase();
             lastName = lastName.toUpperCase();
             email = email.toLowerCase();
 
+            // add attributes to the model
             theModel.addAttribute("firstName", firstName);
             theModel.addAttribute("lastName", lastName);
             theModel.addAttribute("email", email);
 
+            // save student to database
             Student student = new Student(firstName, lastName,email);
             currentSession.save(student);
 
             return student;
     }
-
-//    @Transactional
-//    @RequestMapping(value = "/processStudent")
-//    public String processStudent(
-//            @RequestParam("firstName") String firstName,
-//            @RequestParam("lastName") String lastName,
-//            @RequestParam("email") String email,
-//            @Valid
-//            @ModelAttribute("student") Student theStudent,
-//            BindingResult theBindingResult,
-//            Model theModel){
-//        if (theBindingResult.hasErrors()) {
-//            return "student/student-form";
-//        } else {
-//
-//            // get the current hibernate session
-//            Session currentSession = sessionFactory.getCurrentSession();
-//
-//            firstName = firstName.toUpperCase();
-//            lastName = lastName.toUpperCase();
-//            email = email.toLowerCase();
-//
-//            theModel.addAttribute("firstName", firstName);
-//            theModel.addAttribute("lastName", lastName);
-//            theModel.addAttribute("email", email);
-//
-//            Student student = new Student(firstName, lastName,email);
-//            currentSession.beginTransaction();
-//            currentSession.save(student);
-//            currentSession.getTransaction().commit();
-//
-//            return "student/student-confirmation";
-//        }
-//
-//    }
 }

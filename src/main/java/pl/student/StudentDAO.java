@@ -6,9 +6,9 @@ import java.util.List;
 
 public interface StudentDAO {
     List<Student> getStudents();
-    Student processStudent(String firstName,
-                          String lastName,
-                          String email,
-                          Student theStudent,
-                          Model theModel);
+    Student saveStudent(String firstName,
+                        String lastName,
+                        String email,
+                        Student theStudent,
+                        Model theModel);
 }
