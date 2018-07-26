@@ -57,12 +57,9 @@ public class StudentDAOImpl implements StudentDAO{
             theModel.addAttribute("email", email);
 
             Student student = new Student(firstName, lastName,email);
-            currentSession.beginTransaction();
             currentSession.save(student);
-            currentSession.getTransaction().commit();
 
             return student;
-
     }
 
 //    @Transactional
