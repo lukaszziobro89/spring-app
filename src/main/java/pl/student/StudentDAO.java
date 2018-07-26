@@ -6,10 +6,9 @@ import java.util.List;
 
 public interface StudentDAO {
     List<Student> getStudents();
-    String processStudent(String firstName,
+    Student processStudent(String firstName,
                           String lastName,
                           String email,
                           Student theStudent,
-//                          BindingResult theBindingResult,
                           Model theModel);
 }

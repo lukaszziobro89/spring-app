@@ -8,6 +8,7 @@ import org.hibernate.service.ServiceRegistry;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.StringTrimmerEditor;
 import org.springframework.stereotype.Controller;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.WebDataBinder;
@@ -111,6 +112,26 @@ public class StudentController {
         List<Student> theStudents = studentDAO.getStudents();
         theModel.addAttribute("student", theStudents);
         return "studentsList";
+    }
+
+    @RequestMapping(value = "/processStudent")
+    public String processStudent(
+            @RequestParam("firstName") String firstName,
+            @RequestParam("lastName") String lastName,
+            @RequestParam("email") String email,
+            @Valid
+            @ModelAttribute("student") Student theStudent,
+            BindingResult theBindingResult,
+            Model theModel){
+        if (theBindingResult.hasErrors()) {
+            return "student/student-form";
+        } else {
+
+            Student student = studentDAO.processStudent(firstName, lastName, email, theStudent, theModel);
+            theModel.addAttribute("student", student);
+
+            return "student/student-confirmation";
+        }
     }
 
 
