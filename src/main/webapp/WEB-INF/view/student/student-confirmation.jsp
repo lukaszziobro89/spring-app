@@ -21,8 +21,8 @@ Last name: ${lastName}
 Email: ${email}
 
 <br><br><br>
-<form class="left_align" action="addStudent"><input type="submit" class="btn success" value="Add another student"/></form>
-<form class="left_align" action="showStudents"><input type="submit" class="btn success" value="Show students list"/></form>
+<form class="left_align" action="addStudent" method="post"><input type="submit" class="btn success" value="Add another student"/></form>
+<form class="left_align" action="showStudents" method="get"><input type="submit" class="btn success" value="Show students list"/></form>
 <form class="left_align" action="<%=request.getContextPath() %>/"><input type="submit" class="btn success" value="Home page"/></form>
 
 </body>

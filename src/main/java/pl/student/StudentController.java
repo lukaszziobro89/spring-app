@@ -30,14 +30,14 @@ public class StudentController {
         dataBinder.registerCustomEditor(String.class, stringTrimmerEditor);
     }
 
-    @RequestMapping(value = "/addStudent")
+    @RequestMapping(value = "/addStudent", method = RequestMethod.POST)
     public String addStudent(Model theModel){
         Student theStudent = new Student();
         theModel.addAttribute("student", theStudent);
         return "student/student-form";
     }
 
-    @RequestMapping(value = "/showStudents", method = RequestMethod.GET)
+    @GetMapping(value = "/showStudents")
     public String getStudents(Model theModel) {
 
         List<Student> theStudents = studentDAO.getStudents();
@@ -45,7 +45,7 @@ public class StudentController {
         return "studentsList";
     }
 
-    @RequestMapping(value = "/processStudent", method = RequestMethod.POST)
+    @PostMapping(value = "/processStudent")
     public String saveStudent(
             @RequestParam("firstName") String firstName,
             @RequestParam("lastName") String lastName,
