@@ -51,16 +51,11 @@ public class StudentDAOImpl implements StudentDAO{
     @Transactional
     @RequestMapping(value = "/processStudent")
     public String processStudent(
-            @RequestParam("firstName") String firstName,
-            @RequestParam("lastName") String lastName,
-            @RequestParam("email") String email,
-            @Valid
-            @ModelAttribute("student") Student theStudent,
-            BindingResult theBindingResult,
+            String firstName,
+            String lastName,
+            String email,
+            Student theStudent,
             Model theModel){
-        if (theBindingResult.hasErrors()) {
-            return "student/student-form";
-        } else {
 
             // get the current hibernate session
             Session currentSession = sessionFactory.getCurrentSession();
@@ -79,7 +74,41 @@ public class StudentDAOImpl implements StudentDAO{
             currentSession.getTransaction().commit();
 
             return "student/student-confirmation";
-        }
 
     }
+
+//    @Transactional
+//    @RequestMapping(value = "/processStudent")
+//    public String processStudent(
+//            @RequestParam("firstName") String firstName,
+//            @RequestParam("lastName") String lastName,
+//            @RequestParam("email") String email,
+//            @Valid
+//            @ModelAttribute("student") Student theStudent,
+//            BindingResult theBindingResult,
+//            Model theModel){
+//        if (theBindingResult.hasErrors()) {
+//            return "student/student-form";
+//        } else {
+//
+//            // get the current hibernate session
+//            Session currentSession = sessionFactory.getCurrentSession();
+//
+//            firstName = firstName.toUpperCase();
+//            lastName = lastName.toUpperCase();
+//            email = email.toLowerCase();
+//
+//            theModel.addAttribute("firstName", firstName);
+//            theModel.addAttribute("lastName", lastName);
+//            theModel.addAttribute("email", email);
+//
+//            Student student = new Student(firstName, lastName,email);
+//            currentSession.beginTransaction();
+//            currentSession.save(student);
+//            currentSession.getTransaction().commit();
+//
+//            return "student/student-confirmation";
+//        }
+//
+//    }
 }
