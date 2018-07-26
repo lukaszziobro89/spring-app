@@ -5,6 +5,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.StringTrimmerEditor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -19,6 +20,13 @@ import java.util.List;
 
 @Controller
 public class StudentController {
+
+    private StudentDAO studentDAO;
+
+    @Autowired
+    public StudentController(StudentDAO studentDAO) {
+        this.studentDAO = studentDAO;
+    }
 
     /**
      *  Init binder makes sure that not white spaces are submitted in form.
@@ -97,36 +105,45 @@ public class StudentController {
 
     }
 
-    @RequestMapping(value = "/showStudents", method = RequestMethod.GET)
-    public String showTable(Model theModel){
+//    @RequestMapping(value = "/showStudents", method = RequestMethod.GET)
+//    public String showTable(Model theModel){
+//
+//        SessionFactory factory;
+//        Configuration configuration = new Configuration();
+//        configuration.configure("hibernate.cfg.xml").addAnnotatedClass(Student.class);
+//        ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder().applySettings(configuration.getProperties()).build();
+//        factory = configuration.buildSessionFactory(serviceRegistry);
+//        Session session = factory.getCurrentSession();
+//
+//        String jdbcURL = "jdbc:mysql://sql.lukaszziobro.nazwa.pl:3306/lukaszziobro_javaspring?useSSL=false";
+//        String user = "lukaszziobro_javaspring";
+//        String pass = "London.11";
+//
+//        try{
+//            System.out.println("Connecting...");
+//            Connection connection = DriverManager.getConnection(jdbcURL, user, pass);
+//
+//            session.beginTransaction();
+//            List<Student> theStudents = session.createQuery("from Student").list();
+//            session.getTransaction().commit();
+//
+//            theModel.addAttribute("studentsLists",theStudents);
+//
+//        } catch (Exception ex){
+//            ex.printStackTrace();
+//        } finally {
+//            factory.close();
+//        }
+//
+//        return "studentsList";
+//    }
 
-        SessionFactory factory;
-        Configuration configuration = new Configuration();
-        configuration.configure("hibernate.cfg.xml").addAnnotatedClass(Student.class);
-        ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder().applySettings(configuration.getProperties()).build();
-        factory = configuration.buildSessionFactory(serviceRegistry);
-        Session session = factory.getCurrentSession();
 
-        String jdbcURL = "jdbc:mysql://sql.lukaszziobro.nazwa.pl:3306/lukaszziobro_javaspring?useSSL=false";
-        String user = "lukaszziobro_javaspring";
-        String pass = "London.11";
+    @RequestMapping("/showStudents")
+    public String listCustomers(Model theModel) {
 
-        try{
-            System.out.println("Connecting...");
-            Connection connection = DriverManager.getConnection(jdbcURL, user, pass);
-
-            session.beginTransaction();
-            List<Student> theStudents = session.createQuery("from Student").list();
-            session.getTransaction().commit();
-
-            theModel.addAttribute("studentsLists",theStudents);
-
-        } catch (Exception ex){
-            ex.printStackTrace();
-        } finally {
-            factory.close();
-        }
-
+        List<Student> theStudents = studentDAO.getStudents();
+        theModel.addAttribute("student", theStudents);
         return "studentsList";
     }
 

@@ -15,8 +15,9 @@
     <img src="${pageContext.request.contextPath}/resources/images/hibernate_logo.png" height="150" width="450"/>
 </p>
 
-<form class="center_align" action="showForm"><input type="submit" class="btn success" value="Various"/></form>
+<form class="center_align" action="showForm"><input type="submit" crlass="btn success" value="Various"/></form>
 <form class="center_align" action="addStudent"><input type="submit" class="btn success" value="Add student"/></form>
+<%--<form class="center_align" action="showStudents"><input type="submit" class="btn success" value="Show students list"/></form>--%>
 <form class="center_align" action="showStudents"><input type="submit" class="btn success" value="Show students list"/></form>
 
 <p style="text-align:center;">

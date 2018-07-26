@@ -21,12 +21,12 @@
             <th>Last Name</th>
             <th>Email</th>
         </tr>
-        <c:forEach items="${studentsLists}" var="student" >
+        <c:forEach var="tempStudent" items="${student}" >
             <tr>
-                <td>${student.id}</td>
-                <td>${student.firstName}</td>
-                <td>${student.lastName}</td>
-                <td>${student.email}</td>
+                <td>${tempStudent.id}</td>
+                <td>${tempStudent.firstName}</td>
+                <td>${tempStudent.lastName}</td>
+                <td>${tempStudent.email}</td>
             </tr>
         </c:forEach>
     </table>
