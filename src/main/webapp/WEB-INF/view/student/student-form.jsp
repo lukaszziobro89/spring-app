@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<form:form action="processStudent" modelAttribute="student" method="get">
+<form:form action="processStudent" modelAttribute="student" method="post">
     First name: <form:input path="firstName"/>
     <form:errors path="firstName" cssClass="error"/>
     <br><br>
