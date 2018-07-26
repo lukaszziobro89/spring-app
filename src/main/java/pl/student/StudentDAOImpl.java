@@ -13,6 +13,7 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.validation.Valid;
@@ -48,7 +49,8 @@ public class StudentDAOImpl implements StudentDAO{
     }
 
 
-    @Transactional
+//    @Transactional
+//    @RequestMapping(value = "/processStudent", method = RequestMethod.POST)
     @RequestMapping(value = "/processStudent")
     public String processStudent(
             String firstName,
