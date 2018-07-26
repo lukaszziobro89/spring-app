@@ -32,7 +32,7 @@
     </table>
 
 <br><br>
-    <form class="left_align" action="addStudent"><input type="submit" class="btn success" value="Add Student"/></form>
+    <form class="left_align" action="addStudent" method="post"><input type="submit" class="btn success" value="Add Student"/></form>
     <form class="left_align" action="<%=request.getContextPath() %>/"><input type="submit" class="btn success" value="Home page"/></form>
 
 </body>
