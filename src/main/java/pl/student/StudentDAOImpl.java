@@ -37,6 +37,22 @@ public class StudentDAOImpl implements StudentDAO{
     }
 
     @Transactional
+    public Student getSingleStudent(int theId) {
+        // get the current hibernate session
+        Session currentSession = sessionFactory.getCurrentSession();
+
+        // create a query
+        Query<Student> theQuery =
+                currentSession.createQuery("from Student s where s.id = :theId", Student.class);
+
+        // execute query and get result list
+        Student theStudent = theQuery.setParameter("id", theId).getSingleResult();
+
+        // return the results
+        return theStudent;
+    }
+
+    @Transactional
     public Student saveStudent(
             String firstName,
             String lastName,

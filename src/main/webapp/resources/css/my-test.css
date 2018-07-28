@@ -25,6 +25,10 @@ form.center_align{
     text-align:center;
 }
 
+form.right_align{
+    text-align:right;
+}
+
 
 .error {color:red}
 

@@ -20,13 +20,22 @@
             <th>First Name</th>
             <th>Last Name</th>
             <th>Email</th>
+            <th>Action</th>
         </tr>
         <c:forEach var="tempStudent" items="${student}" >
+
+            <c:url var="updateButton" value="/student/showUpdateForm"/>
+                <c:param name="studentId" value="${tempStudent.id}"/>
+            <c:url/>
+
             <tr>
                 <td>${tempStudent.id}</td>
                 <td>${tempStudent.firstName}</td>
                 <td>${tempStudent.lastName}</td>
                 <td>${tempStudent.email}</td>
+                <td>
+                    <form class="right_align" action="${updateButton}" method="get"><input type="submit" class="btn success" value="Update student"/></form>
+                </td>
             </tr>
         </c:forEach>
     </table>

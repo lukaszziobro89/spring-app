@@ -64,4 +64,13 @@ public class StudentController {
             return "student/student-confirmation";
         }
     }
+
+    @GetMapping(value = "/student/showUpdateForm")
+    public String updateStudent(@RequestParam("id") int theId,
+                                Model theModel){
+
+        Student theStudent = studentDAO.getSingleStudent(theId);
+        theModel.addAttribute("student", theStudent);
+        return "student/student-form";
+    }
 }
