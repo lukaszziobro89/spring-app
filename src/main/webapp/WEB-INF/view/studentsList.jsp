@@ -26,8 +26,8 @@
 
             <c:url var="updateButton" value="/student/showUpdateForm"/>
                 <c:param name="id" value="${tempStudent.id}"/>
-                <c:import url = "${updateButton}"/>
             <c:url/>
+            <c:import url = "${updateButton}"/>
 
             <tr>
                 <td>${tempStudent.id}</td>
