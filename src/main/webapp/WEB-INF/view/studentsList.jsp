@@ -1,7 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" isELIgnored="false" pageEncoding="UTF-8"%>
-<%--<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>--%>
-
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <html>
 <head>
@@ -28,6 +26,7 @@
 
             <c:url var="updateButton" value="/student/showUpdateForm"/>
                 <c:param name="id" value="${tempStudent.id}"/>
+                <c:import url = "${updateButton}"/>
             <c:url/>
 
             <tr>
