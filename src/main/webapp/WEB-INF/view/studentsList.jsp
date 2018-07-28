@@ -25,7 +25,6 @@
         <c:forEach var="tempStudent" items="${student}" >
 
             <c:url var="updateButton" value="/student/showUpdateForm">
-            <c:url var="updateButton" value="/student/showUpdateForm">
                 <c:param name="id" value="${tempStudent.id}"/>
             </c:url>
 
