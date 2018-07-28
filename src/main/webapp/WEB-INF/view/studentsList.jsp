@@ -22,31 +22,11 @@
             <th>Email</th>
             <th>Action</th>
         </tr>
-        <%--<c:forEach var="tempStudent" items="${student}" >--%>
+        <c:forEach var="tempStudent" items="${student}" >
 
-            <%--<c:url var="updateButton" value="/student/showUpdateForm"/>--%>
-                <%--<c:param name="id" value="${tempStudent.id}"/>--%>
-            <%--<c:url/>--%>
-            <%----%>
-
-            <%----%>
-            <%--<tr>--%>
-                <%--<td>${tempStudent.id}</td>--%>
-                <%--<td>${tempStudent.firstName}</td>--%>
-                <%--<td>${tempStudent.lastName}</td>--%>
-                <%--<td>${tempStudent.email}</td>--%>
-                <%--<td>--%>
-                    <%--&lt;%&ndash;<form class="right_align" action="${updateButton}" method="get"><input type="submit" class="btn success" value="Update student"/></form>&ndash;%&gt;--%>
-                        <%--<a href="${updateButton}">Update</a>--%>
-                <%--</td>--%>
-            <%--</tr>--%>
-        <%--</c:forEach>--%>
-
-        <c:forEach var="tempStudent" items="${student}">
-
-            <!-- construct an "update" link with customer id -->
             <c:url var="updateButton" value="/student/showUpdateForm">
-                <c:param name="id" value="${tempStudent.id}" />
+            <c:url var="updateButton" value="/student/showUpdateForm">
+                <c:param name="id" value="${tempStudent.id}"/>
             </c:url>
 
             <tr>
@@ -55,10 +35,29 @@
                 <td>${tempStudent.lastName}</td>
                 <td>${tempStudent.email}</td>
                 <td>
-                    <a href="${updateButton}">Update</a>
+                    <form class="right_align" action="${updateButton}" method="get"><input type="submit" class="btn success" value="Update student"/></form>
+                        <%--<a href="${updateButton}">Update</a>--%>
                 </td>
             </tr>
         </c:forEach>
+
+        <%--<c:forEach var="tempStudent" items="${student}">--%>
+
+            <%--<!-- construct an "update" link with customer id -->--%>
+            <%--<c:url var="updateButton" value="/student/showUpdateForm">--%>
+                <%--<c:param name="id" value="${tempStudent.id}" />--%>
+            <%--</c:url>--%>
+
+            <%--<tr>--%>
+                <%--<td>${tempStudent.id}</td>--%>
+                <%--<td>${tempStudent.firstName}</td>--%>
+                <%--<td>${tempStudent.lastName}</td>--%>
+                <%--<td>${tempStudent.email}</td>--%>
+                <%--<td>--%>
+                    <%--<a href="${updateButton}">Update</a>--%>
+                <%--</td>--%>
+            <%--</tr>--%>
+        <%--</c:forEach>--%>
     </table>
 
 <br><br>
