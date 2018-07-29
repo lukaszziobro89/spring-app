@@ -45,7 +45,7 @@ public class StudentController {
         return "studentsList";
     }
 
-    @PostMapping(value = "/processStudent")
+    @PostMapping(value = "student/processStudent")
     public String saveStudent(
             @RequestParam("firstName") String firstName,
             @RequestParam("lastName") String lastName,
