@@ -45,7 +45,7 @@ public class StudentController {
         return "studentsList";
     }
 
-    @PostMapping(value = "student/processStudent")
+    @PostMapping(value = "processStudent")
     public String saveStudent(
             @RequestParam("firstName") String firstName,
             @RequestParam("lastName") String lastName,
@@ -64,7 +64,7 @@ public class StudentController {
         }
     }
 
-    @RequestMapping(value = "/student/showUpdateForm")
+    @RequestMapping(value = "showUpdateForm")
     public String updateStudent(@RequestParam("studentId") int theId,
                                 Model theModel){
 
@@ -73,7 +73,7 @@ public class StudentController {
         return "student/student-form";
     }
 
-    @GetMapping(value = "/student/showDeleteConfirmation")
+    @GetMapping(value = "showDeleteConfirmation")
     public String deleteStudent(){
         return null;
     }
