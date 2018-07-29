@@ -25,7 +25,12 @@
             <th>Action</th>
         </tr>
         <c:forEach var="tempStudent" items="${student}" >
+
             <c:url var="updateButton" value="showUpdateForm">
+                <c:param name="studentId" value="${tempStudent.id}"/>
+            </c:url>
+
+            <c:url var="deleteButton" value="delete">
                 <c:param name="studentId" value="${tempStudent.id}"/>
             </c:url>
 
@@ -37,7 +42,9 @@
                 <td style="width:20%">
                     <sf:form cssClass="buttons">
                         <sf:form class="left_align" action="${updateButton}"><input type="submit" class="btn info" value="Update student"/></sf:form>
-                        <sf:form class="right_align" action="${updateButton}"><input type="submit" class="btn danger" value="Delete student"/></sf:form>
+                        <sf:form class="right_align"
+                                 onclick="if (!(confirm('Are you sure you want to delete student?'))) return false"
+                                 action="${deleteButton}"><input type="submit" class="btn danger" value="Delete student"/></sf:form>
                     </sf:form>
                 </td>
             </tr>

@@ -17,4 +17,7 @@ public interface StudentDAO {
                         String email,
                         Student theStudent,
                         Model theModel);
+
+    /** Add new student to database */
+    void deleteStudent(int theId);
 }

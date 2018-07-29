@@ -60,7 +60,10 @@ public class StudentController {
 
             theStudent = studentDAO.saveStudent(firstName, lastName, email, theStudent, theModel);
             theModel.addAttribute("student", theStudent);
-            return "student/student-confirmation";
+
+            // TODO: JavaScript confirmation message box with details
+
+            return "redirect:studentsList";
         }
     }
 
@@ -73,9 +76,10 @@ public class StudentController {
         return "student/student-form";
     }
 
-    @GetMapping(value = "showDeleteConfirmation")
-    public String deleteStudent(){
-        return null;
+    @GetMapping(value = "delete")
+    public String deleteStudent(@RequestParam("id") int theId){
+        studentDAO.deleteStudent(theId);
+        return "redirect:studentsList";
     }
 
 }

@@ -68,4 +68,12 @@ public class StudentDAOImpl implements StudentDAO{
 
             return theStudent;
     }
+
+    @Transactional
+    public void deleteStudent(int theId) {
+        Session currentSession = sessionFactory.getCurrentSession();
+        Query theQuery = currentSession.createQuery("delete from student where id=:studentId");
+        theQuery.setParameter("studentId", theId);
+        theQuery.executeUpdate();
+    }
 }
