@@ -17,6 +17,11 @@ form{
     text-align:left;
 }
 
+form.buttons{
+    text-align:left;
+    display: inline;
+}
+
 form.left_align{
     text-align:left;
     display: inline;
