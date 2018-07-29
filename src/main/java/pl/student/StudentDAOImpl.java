@@ -65,8 +65,11 @@ public class StudentDAOImpl implements StudentDAO{
             theModel.addAttribute("email", email);
 
             // save student to database
+
             theStudent = new Student(firstName, lastName,email);
             currentSession.saveOrUpdate(theStudent);
+
+//            currentSession.update();
 
             return theStudent;
     }

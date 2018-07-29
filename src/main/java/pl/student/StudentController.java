@@ -58,8 +58,8 @@ public class StudentController {
             return "student/student-form";
         } else {
 
-            Student student = studentDAO.saveStudent(firstName, lastName, email, theStudent, theModel);
-            theModel.addAttribute("student", student);
+            theStudent = studentDAO.saveStudent(firstName, lastName, email, theStudent, theModel);
+            theModel.addAttribute("student", theStudent);
             return "student/student-confirmation";
         }
     }
