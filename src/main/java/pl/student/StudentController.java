@@ -63,7 +63,7 @@ public class StudentController {
 
             // TODO: JavaScript confirmation message box with details
 
-            return "redirect:studentsList";
+            return "studentsList";
         }
     }
 
@@ -79,7 +79,7 @@ public class StudentController {
     @GetMapping(value = "delete")
     public String deleteStudent(@RequestParam("id") int theId){
         studentDAO.deleteStudent(theId);
-        return "redirect:studentsList";
+        return "studentsList";
     }
 
 }
