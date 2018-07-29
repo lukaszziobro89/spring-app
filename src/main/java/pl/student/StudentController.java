@@ -66,7 +66,7 @@ public class StudentController {
     }
 
     @GetMapping(value = "/student/showUpdateForm")
-    public String updateStudent(@RequestParam("id") int theId,
+    public String updateStudent(@RequestParam("studentId") int theId,
                                 Model theModel){
 
         Student theStudent = studentDAO.getStudent(theId);
