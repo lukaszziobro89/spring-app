@@ -37,7 +37,7 @@ public class StudentDAOImpl implements StudentDAO{
     }
 
     @Transactional
-    public Student getSingleStudent(int theId) {
+    public Student getStudent(int theId) {
         // get the current hibernate session
         Session currentSession = sessionFactory.getCurrentSession();
 

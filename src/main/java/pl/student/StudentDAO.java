@@ -6,7 +6,7 @@ import java.util.List;
 public interface StudentDAO {
 
     /** Return single student */
-    Student getSingleStudent(int id);
+    Student getStudent(int id);
 
     /** Return list of students  */
     List<Student> getStudents();

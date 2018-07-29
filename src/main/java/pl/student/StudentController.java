@@ -69,7 +69,7 @@ public class StudentController {
     public String updateStudent(@RequestParam("id") int theId,
                                 Model theModel){
 
-        Student theStudent = studentDAO.getSingleStudent(theId);
+        Student theStudent = studentDAO.getStudent(theId);
         theModel.addAttribute("student", theStudent);
         return "student/student-form";
     }
