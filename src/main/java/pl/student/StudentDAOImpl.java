@@ -66,7 +66,7 @@ public class StudentDAOImpl implements StudentDAO{
 
             // save student to database
             Student student = new Student(firstName, lastName,email);
-            currentSession.save(student);
+            currentSession.saveOrUpdate(student);
 
             return student;
     }
