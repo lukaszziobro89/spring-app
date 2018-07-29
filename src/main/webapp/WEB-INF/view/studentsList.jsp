@@ -28,13 +28,18 @@
                 <c:param name="id" value="${tempStudent.id}"/>
             </c:url>
 
+            <c:url var="deleteButton" value="/student/showDeleteConfirmation">
+                <c:param name="id" value="${tempStudent.id}"/>
+            </c:url>
+
             <tr>
                 <td>${tempStudent.id}</td>
                 <td>${tempStudent.firstName}</td>
                 <td>${tempStudent.lastName}</td>
                 <td>${tempStudent.email}</td>
                 <td>
-                    <form class="center_align" action="${updateButton}" method="get"><input type="submit" class="btn info" value="Update student"/></form>
+                    <form class="left_align" action="${updateButton}" method="get"><input type="submit" class="btn info" value="Update student"/></form>
+                    <form class="right_align" action="${updateButton}" method="get"><input type="submit" class="btn info" value="Delete student"/></form>
                 </td>
             </tr>
         </c:forEach>

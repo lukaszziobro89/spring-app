@@ -73,4 +73,10 @@ public class StudentController {
         theModel.addAttribute("student", theStudent);
         return "student/student-form";
     }
+
+    @GetMapping(value = "/student/showDeleteConfirmation")
+    public String deleteStudent(){
+        return null;
+    }
+
 }

@@ -46,7 +46,7 @@ public class StudentDAOImpl implements StudentDAO{
                 currentSession.createQuery("from Student s where s.id = :theId", Student.class);
 
         // execute query and get result list
-        Student theStudent = theQuery.setParameter("id", theId).getSingleResult();
+        Student theStudent = theQuery.setParameter(theId, "id").getSingleResult();
 
         // return the results
         return theStudent;
