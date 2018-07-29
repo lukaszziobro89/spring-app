@@ -1,4 +1,4 @@
-<%--<%@ page language="java" contentType="text/html; charset=UTF-8" isELIgnored="false" pageEncoding="UTF-8"%>--%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" isELIgnored="false" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <html>
@@ -25,7 +25,7 @@
         <c:forEach var="tempStudent" items="${student}" >
 
             <c:url var="updateButton" value="/student/showUpdateForm">
-                <c:param name="id" value="${tempStudent.id}"/>
+                <c:param name="studentId" value="${tempStudent.id}"/>
             </c:url>
 
             <tr>
@@ -35,7 +35,8 @@
                 <td>${tempStudent.email}</td>
                 <td>
                     <form class="left_align" action="${updateButton}" method="get"><input type="submit" class="btn info" value="Update student"/></form>
-                    <form class="right_align" action="${updateButton}" method="get"><input type="submit" class="btn info" value="Delete student"/></form>
+                    <%--<form class="right_align" action="${updateButton}" method="get"><input type="submit" class="btn info" value="Delete student"/></form>--%>
+                    <a href="${updateButton}">Update</a>
                 </td>
             </tr>
         </c:forEach>
