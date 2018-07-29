@@ -35,8 +35,10 @@
                 <td>${tempStudent.lastName}</td>
                 <td>${tempStudent.email}</td>
                 <td>
-                    <sf:form class="left_align" action="${updateButton}"><input type="submit" class="btn info" value="Update student"/></sf:form>
-                    <sf:form class="right_align" action="${updateButton}"><input type="submit" class="btn danger" value="Delete student"/></sf:form>
+                    <sf:form>
+                        <sf:form class="left_align" action="${updateButton}"><input type="submit" class="btn info" value="Update student"/></sf:form>
+                        <sf:form class="right_align" action="${updateButton}"><input type="submit" class="btn danger" value="Delete student"/></sf:form>
+                    </sf:form>
                 </td>
             </tr>
         </c:forEach>

@@ -15,6 +15,7 @@ p {
 
 form{
     text-align:left;
+    display: inline;
 }
 
 form.left_align{
