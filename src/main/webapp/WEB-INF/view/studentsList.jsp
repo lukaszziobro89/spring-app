@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" isELIgnored="false" pageEncoding="UTF-8"%>
+<%--<%@ page language="java" contentType="text/html; charset=UTF-8" isELIgnored="false" pageEncoding="UTF-8"%>--%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <html>
@@ -27,10 +27,6 @@
             <c:url var="updateButton" value="/student/showUpdateForm">
                 <c:param name="id" value="${tempStudent.id}"/>
             </c:url>
-
-            <%--<c:url var="deleteButton" value="/student/showDeleteConfirmation">--%>
-                <%--<c:param name="id" value="${tempStudent.id}"/>--%>
-            <%--</c:url>--%>
 
             <tr>
                 <td>${tempStudent.id}</td>
