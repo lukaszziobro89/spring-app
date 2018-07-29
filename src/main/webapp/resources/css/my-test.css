@@ -9,7 +9,7 @@ h2 {
 
 p {
     font-family: Verdana;
-    font-size: 15px;
+    font-size: 12px;
     text-align: center;
 }
 
@@ -37,7 +37,7 @@ form.right_align{
     background-color: white;
     color: black;
     padding: 5px 10px;
-    font-size: 14px;
+    font-size: 10px;
     cursor: pointer;
 }
 
