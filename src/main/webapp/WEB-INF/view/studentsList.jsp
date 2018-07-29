@@ -35,7 +35,7 @@
                 <td>${tempStudent.lastName}</td>
                 <td>${tempStudent.email}</td>
                 <td>
-                    <sf:form class="left_align" action="${updateButton}" method="get"><input type="submit" class="btn info" value="Update student"/></sf:form>
+                    <sf:form class="left_align" action="${updateButton}"><input type="submit" class="btn info" value="Update student"/></sf:form>
                     <a href="${updateButton}">Update</a>
                 </td>
             </tr>
