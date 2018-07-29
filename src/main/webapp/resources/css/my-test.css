@@ -15,11 +15,11 @@ p {
 
 form{
     text-align:left;
-    display: inline;
 }
 
 form.left_align{
     text-align:left;
+    display: inline;
 }
 
 form.center_align{
@@ -28,6 +28,7 @@ form.center_align{
 
 form.right_align{
     text-align:right;
+    display: inline;
 }
 
 
