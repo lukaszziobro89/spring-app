@@ -12,8 +12,7 @@ public interface StudentDAO {
     List<Student> getStudents();
 
     /** Add new student to database */
-    Student saveStudent(Integer id,
-                        String firstName,
+    Student saveStudent(String firstName,
                         String lastName,
                         String email,
                         Student theStudent,

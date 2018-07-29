@@ -43,13 +43,6 @@ public class Student{
         this.email = email;
     }
 
-    public Student(Integer id, String firstName, String lastName, String email) {
-        this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
-    }
-
     public Integer getId() {
         return id;
     }

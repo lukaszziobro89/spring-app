@@ -45,7 +45,6 @@ public class StudentDAOImpl implements StudentDAO{
 
     @Transactional
     public Student saveStudent(
-            Integer id,
             String firstName,
             String lastName,
             String email,
@@ -61,15 +60,14 @@ public class StudentDAOImpl implements StudentDAO{
             email = email.toLowerCase();
 
             // add attributes to the model
-            theModel.addAttribute("id", id);
             theModel.addAttribute("firstName", firstName);
             theModel.addAttribute("lastName", lastName);
             theModel.addAttribute("email", email);
 
             // save student to database
-            Student student = new Student(id, firstName, lastName,email);
-            currentSession.saveOrUpdate(student);
+            theStudent = new Student(firstName, lastName,email);
+            currentSession.saveOrUpdate(theStudent);
 
-            return student;
+            return theStudent;
     }
 }
