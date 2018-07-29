@@ -60,7 +60,6 @@ public class StudentController {
 
             Student student = studentDAO.saveStudent(firstName, lastName, email, theStudent, theModel);
             theModel.addAttribute("student", student);
-
             return "student/student-confirmation";
         }
     }
