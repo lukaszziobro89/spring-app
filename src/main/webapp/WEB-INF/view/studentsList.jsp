@@ -41,8 +41,7 @@
                 <td>
                     <a href="${updateButton}">Update</a>
                     <a href="${deleteButton}"
-                       onclick="if (
-                           (confirm('Are you sure you want to delete student?'))){
+                       onclick="if (confirm('Are you sure you want to delete student?')){
                                alert('User: ' + ${tempStudent.id} + ' ' + ${tempStudent.firstName} + ' ' + ${tempStudent.firstName} + ' deleted.')
                            } else{return false}">Delete</a>
                 </td>
