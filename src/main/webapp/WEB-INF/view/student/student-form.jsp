@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<form:form action="processStudent" modelAttribute="student" method="post">
+<form:form action="processStudent" modelAttribute="student">
     <%-- Hidden field --%>
     <form:hidden path="id"/>
     First name: <form:input path="firstName"/>

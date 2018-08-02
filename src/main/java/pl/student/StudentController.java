@@ -67,7 +67,7 @@ public class StudentController {
         }
     }
 
-    @RequestMapping(value = "showUpdateForm")
+    @GetMapping(value = "showUpdateForm")
     public String updateStudent(@RequestParam("studentId") int theId,
                                 Model theModel){
 
