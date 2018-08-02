@@ -25,7 +25,7 @@
             <th>Action</th>
         </tr>
         <c:forEach var="tempStudent" items="${student}" >
-
+            <form:hidden path="id"/>
             <c:url var="updateButton" value="showUpdateForm">
                 <c:param name="studentId" value="${tempStudent.id}"/>
             </c:url>
@@ -41,7 +41,8 @@
                 <td>${tempStudent.email}</td>
                 <td>
                     <a href="${updateButton}">Update</a>
-                    <a href="${deleteButton}">Delete</a>
+                    <a href="${deleteButton}"
+                       onclick="if (!(confirm('Are you sure you want to delete student?'))) return false">Delete</a>
                 </td>
                 <%--<td style="width:20%">--%>
                     <%--<sf:form cssClass="buttons">--%>

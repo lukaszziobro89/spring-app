@@ -75,7 +75,7 @@ public class StudentController {
         return "student/student-form";
     }
 
-    @RequestMapping(value = "delete")
+    @GetMapping(value = "delete")
     public String deleteStudent(@RequestParam("id") int theId){
         studentDAO.deleteStudent(theId);
         return "redirect:/studentsList";
