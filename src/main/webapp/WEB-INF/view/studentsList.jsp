@@ -25,7 +25,6 @@
             <th>Action</th>
         </tr>
         <c:forEach var="tempStudent" items="${student}" >
-            <form:hidden path="id"/>
             <c:url var="updateButton" value="showUpdateForm">
                 <c:param name="studentId" value="${tempStudent.id}"/>
             </c:url>
