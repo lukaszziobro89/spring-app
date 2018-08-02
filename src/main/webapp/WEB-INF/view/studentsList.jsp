@@ -39,14 +39,18 @@
                 <td>${tempStudent.firstName}</td>
                 <td>${tempStudent.lastName}</td>
                 <td>${tempStudent.email}</td>
-                <td style="width:20%">
-                    <sf:form cssClass="buttons">
-                        <sf:form class="left_align" action="${updateButton}" method="get"><input type="submit" class="btn info" value="Update student"/></sf:form>
-                        <sf:form class="right_align"
-                                 onclick="if (!(confirm('Are you sure you want to delete student?'))) return false"
-                                 action="${deleteButton}"><input type="submit" class="btn danger" value="Delete student"/></sf:form>
-                    </sf:form>
+                <td>
+                    <a href="${updateButton}">Update</a>
+                    <a href="${deleteButton}">Delete</a>
                 </td>
+                <%--<td style="width:20%">--%>
+                    <%--<sf:form cssClass="buttons">--%>
+                        <%--<sf:form class="left_align" action="${updateButton}" method="get"><input type="submit" class="btn info" value="Update student"/></sf:form>--%>
+                        <%--<sf:form class="right_align"--%>
+                                 <%--onclick="if (!(confirm('Are you sure you want to delete student?'))) return false"--%>
+                                 <%--action="${deleteButton}"><input type="submit" class="btn danger" value="Delete student"/></sf:form>--%>
+                    <%--</sf:form>--%>
+                <%--</td>--%>
             </tr>
         </c:forEach>
     </table>
