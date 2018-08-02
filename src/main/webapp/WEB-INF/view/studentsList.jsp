@@ -44,6 +44,7 @@
                        onclick="if (confirm('Are you sure you want to delete student?')){
                                alert('User: ' + ${tempStudent.id} + ' ' + ${tempStudent.firstName} + ' ' + ${tempStudent.firstName} + ' deleted.')
                            } else{return false}">Delete</a>
+                    <a href="" onclick="alert('Hello World!')">Update</a>
                 </td>
                 <%--<td style="width:20%">--%>
                     <%--<sf:form cssClass="buttons">--%>
