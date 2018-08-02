@@ -73,7 +73,7 @@ public class StudentController {
 
         Student theStudent = studentDAO.getStudent(theId);
         theModel.addAttribute("student", theStudent);
-        return "student/student-form";
+        return "redirect:student/student-form";
     }
 
     @RequestMapping(value = "delete")
