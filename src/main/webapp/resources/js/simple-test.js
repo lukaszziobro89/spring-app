@@ -12,4 +12,3 @@ function getCurrentTime(){
 function printTime() {
     alert(getCurrentTime());
 }
-
