@@ -73,13 +73,13 @@ public class StudentController {
 
         Student theStudent = studentDAO.getStudent(theId);
         theModel.addAttribute("student", theStudent);
-        return "redirect:student/student-form";
+        return "redirect:/student/student-form";
     }
 
     @RequestMapping(value = "delete")
     public String deleteStudent(@RequestParam("id") int theId){
         studentDAO.deleteStudent(theId);
-        return "redirect:studentsList";
+        return "redirect:/studentsList";
     }
 
 }
