@@ -67,13 +67,12 @@ public class StudentController {
         }
     }
 
-    @RequestMapping(value = "showUpdateForm")
+    @GetMapping(value = "showUpdateForm")
     public String updateStudent(@RequestParam("studentId") int theId,
                                 Model theModel){
-
         Student theStudent = studentDAO.getStudent(theId);
         theModel.addAttribute("student", theStudent);
-        return "redirect:/student/student-form";
+        return "student/student-form";
     }
 
     @RequestMapping(value = "delete")
