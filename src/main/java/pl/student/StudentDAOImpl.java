@@ -30,18 +30,10 @@ public class StudentDAOImpl implements StudentDAO{
 
     @Transactional
     public List<Student> getStudents() {
-
-        // get the current hibernate session
         Session currentSession = sessionFactory.getCurrentSession();
-
-        // create a query
         Query<Student> theQuery =
                 currentSession.createQuery("from Student", Student.class);
-
-        // execute query and get result list
         List<Student> students = theQuery.getResultList();
-
-        // return the results
         return students;
     }
 
@@ -121,7 +113,7 @@ public class StudentDAOImpl implements StudentDAO{
                     isValidEmail = true;
                 }
 //                    if (isValidName && name.length()>2 && isValidSurname && surname.length()>2 && isValidEmail){
-                if (isValidEmail){
+                if (!isValidEmail){
                         theStudent = new Student(student[0], student[1], student[2]);
                         students.add(theStudent);
                     } else {
