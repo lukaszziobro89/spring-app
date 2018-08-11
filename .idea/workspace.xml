@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7eed35ba-a5eb-43f1-b369-1a289b9475d9" name="Default" comment="" />
+    <list default="true" id="7eed35ba-a5eb-43f1-b369-1a289b9475d9" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/student/StudentDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/student/StudentDAOImpl.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -45,8 +47,8 @@
       <file leaf-file-name="StudentDAOImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/student/StudentDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="111" column="49" lean-forward="true" selection-start-line="111" selection-start-column="16" selection-end-line="111" selection-end-column="49" />
+            <state relative-caret-position="468">
+              <caret line="116" column="108" selection-start-line="116" selection-start-column="108" selection-end-line="116" selection-end-column="108" />
             </state>
           </provider>
         </entry>
@@ -357,16 +359,15 @@
       <option name="presentableId" value="Default" />
       <updated>1533658571831</updated>
       <workItem from="1533658573346" duration="4356000" />
-      <workItem from="1533897225419" duration="15236000" />
+      <workItem from="1533897225419" duration="15504000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19592000" />
+    <option name="totallyTimeSpent" value="19860000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1536" height="864" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32994923" />
@@ -388,7 +389,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32994923" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32994923" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32994923" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49873096" visible="true" weight="0.21409395" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" sideWeight="0.50126904" side_tool="true" weight="0.21409395" />
@@ -532,8 +533,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/student/StudentDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="111" column="49" lean-forward="true" selection-start-line="111" selection-start-column="16" selection-end-line="111" selection-end-column="49" />
+        <state relative-caret-position="468">
+          <caret line="116" column="108" selection-start-line="116" selection-start-column="108" selection-end-line="116" selection-end-column="108" />
         </state>
       </provider>
     </entry>
