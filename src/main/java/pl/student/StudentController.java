@@ -79,8 +79,7 @@ public class StudentController {
         return "redirect:/showStudents";
     }
 
-
-    @RequestMapping(value = "showBulkAddForm", method = RequestMethod.POST)
+    @RequestMapping(value = "showBulkAddForm")
     public String submit() {
         return "student/bulkLoadStudents";
     }
