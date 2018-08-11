@@ -59,12 +59,8 @@ public class StudentController {
         if (theBindingResult.hasErrors()) {
             return "student/student-form";
         } else {
-
             theStudent = studentDAO.saveStudent(firstName, lastName, email, theStudent, theModel);
             theModel.addAttribute("student", theStudent);
-
-            // TODO: JavaScript confirmation message box with details
-
             return "student/student-confirmation";
         }
     }
@@ -83,11 +79,17 @@ public class StudentController {
         return "redirect:/showStudents";
     }
 
-    @RequestMapping(value = "/loadFile", method = RequestMethod.POST)
+
+    @RequestMapping(value = "showBulkAddForm", method = RequestMethod.POST)
+    public String submit() {
+        return "student/bulkLoadStudents";
+    }
+
+    @RequestMapping(value = "/bulkAddStudents", method = RequestMethod.POST)
     public String submit(@RequestParam("file") MultipartFile file, ModelMap modelMap) {
         List<Student> students = studentDAO.bulkStudentAdd(file);
         modelMap.addAttribute("theStudent", students);
-        return "student/bulkStudents";
+        return "student/bulkLoadStudents";
     }
 
 }

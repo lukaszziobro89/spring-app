@@ -84,6 +84,7 @@ public class StudentDAOImpl implements StudentDAO{
         theQuery.executeUpdate();
     }
 
+//    @Transactional
     public List<Student> bulkStudentAdd(MultipartFile file) {
         BufferedReader br;
         List<String> result = new ArrayList<>();
