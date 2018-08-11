@@ -120,7 +120,8 @@ public class StudentDAOImpl implements StudentDAO{
                 if (m.find()){
                     isValidEmail = true;
                 }
-                    if (isValidName && name.length()>2 && isValidSurname && surname.length()>2 && isValidEmail){
+//                    if (isValidName && name.length()>2 && isValidSurname && surname.length()>2 && isValidEmail){
+                if (isValidEmail){
                         theStudent = new Student(student[0], student[1], student[2]);
                         students.add(theStudent);
                     } else {
