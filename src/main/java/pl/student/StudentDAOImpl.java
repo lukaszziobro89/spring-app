@@ -102,6 +102,7 @@ public class StudentDAOImpl implements StudentDAO{
                 result.add(line);
                 student = line.split(",");
 
+                isValidEmail = false;
                 String name = student[0];
                 String surname = student[1];
                 String email = student[2];
@@ -110,7 +111,7 @@ public class StudentDAOImpl implements StudentDAO{
                 isValidSurname = surname.chars().allMatch(Character::isLetter);
 
                 matcher = pattern.matcher(email);
-                if (matcher.lookingAt()){
+                if (matcher.matches()){
                     isValidEmail = true;
                 }
 //                    if (isValidName && name.length()>2 && isValidSurname && surname.length()>2 && isValidEmail){
