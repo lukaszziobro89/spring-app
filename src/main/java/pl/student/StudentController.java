@@ -80,7 +80,7 @@ public class StudentController {
     }
 
     @RequestMapping(value = "showBulkAddForm")
-    public String submit() {
+    public String showBulkAddForm() {
         return "student/bulkLoadStudents";
     }
 

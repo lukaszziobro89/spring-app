@@ -8,7 +8,7 @@
 
 
 Select file: <br />
-<form:form method="POST" action="bulkStudents" enctype="multipart/form-data">
+<form:form method="POST" action="bulkAddStudents" enctype="multipart/form-data">
 <table>
 <tr>
 <td><label path="file">Select a file to upload</label></td>
