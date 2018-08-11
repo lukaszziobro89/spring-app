@@ -88,7 +88,7 @@ public class StudentController {
     public String submit(@RequestParam("file") MultipartFile file, ModelMap modelMap) {
         List<Student> students = studentDAO.bulkStudentAdd(file);
         modelMap.addAttribute("theStudent", students);
-        return "student/bulkLoadStudents";
+        return "student/bulkStudents";
     }
 
 }
