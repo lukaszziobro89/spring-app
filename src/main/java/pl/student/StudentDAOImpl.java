@@ -15,6 +15,8 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 @Repository
 public class StudentDAOImpl implements StudentDAO{
@@ -89,18 +91,48 @@ public class StudentDAOImpl implements StudentDAO{
         BufferedReader br;
         List<String> result = new ArrayList<>();
         List<Student> students = new ArrayList<>();
-        String[] customer;
+        List<String> invalidEntries = new ArrayList<>();
+        String invalidStudent;
+        String[] student;
         Student theStudent;
+        boolean isValidName = false;
+        boolean isValidSurname = false;
+        boolean isValidEmail = false;
+        Pattern p = Pattern.compile("\\b[A-Z0-9._%-]+@[A-Z0-9.-]+\\.[A-Z]{2,4}\\b");
+        Matcher m;
+
         try {
             String line;
             InputStream is = file.getInputStream();
             br = new BufferedReader(new InputStreamReader(is));
             while ((line = br.readLine()) != null) {
                 result.add(line);
-                customer = line.split(",");
-                theStudent = new Student(customer[0], customer[1], customer[2]);
-                students.add(theStudent);
+                student = line.split(",");
+
+                String name = student[0];
+                String surname = student[1];
+                String email = student[2];
+
+                isValidName = name.chars().allMatch(Character::isLetter);
+                isValidSurname = surname.chars().allMatch(Character::isLetter);
+
+                m = p.matcher(email);
+                if (m.find()){
+                    isValidEmail = true;
+                }
+                    if ((isValidName || name.length()>2) || (isValidSurname || surname.length()>2) || isValidEmail){
+                        theStudent = new Student(student[0], student[1], student[2]);
+                        students.add(theStudent);
+                    } else {
+                       invalidStudent = name + " - " + surname + " - " + email;
+                       invalidEntries.add(invalidStudent);
+                    }
             }
+
+            for (String invalidEntry : invalidEntries) {
+                System.out.println(invalidEntry);
+            }
+
         } catch (IOException e) {
             System.err.println(e.getMessage());
         }

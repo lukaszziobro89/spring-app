@@ -41,7 +41,6 @@ public class StudentController {
 
     @RequestMapping(value = "/showStudents")
     public String getStudents(Model theModel) {
-
         List<Student> theStudents = studentDAO.getStudents();
         theModel.addAttribute("student", theStudents);
         return "studentsList";
@@ -66,8 +65,7 @@ public class StudentController {
     }
 
     @GetMapping(value = "showUpdateForm")
-    public String updateStudent(@RequestParam("studentId") int theId,
-                                Model theModel){
+    public String updateStudent(@RequestParam("studentId") int theId, Model theModel){
         Student theStudent = studentDAO.getStudent(theId);
         theModel.addAttribute("student", theStudent);
         return "student/student-form";
