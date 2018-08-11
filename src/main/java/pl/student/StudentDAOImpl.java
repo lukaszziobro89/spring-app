@@ -7,6 +7,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
+import org.springframework.web.multipart.MultipartFile;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.List;
 
 @Repository
@@ -75,5 +82,27 @@ public class StudentDAOImpl implements StudentDAO{
         Query theQuery = currentSession.createQuery("delete from Student where id=:studentId");
         theQuery.setParameter("studentId", theId);
         theQuery.executeUpdate();
+    }
+
+    public List<Student> bulkStudentAdd(MultipartFile file) {
+        BufferedReader br;
+        List<String> result = new ArrayList<>();
+        List<Student> students = new ArrayList<>();
+        String[] customer;
+        Student theStudent;
+        try {
+            String line;
+            InputStream is = file.getInputStream();
+            br = new BufferedReader(new InputStreamReader(is));
+            while ((line = br.readLine()) != null) {
+                result.add(line);
+                customer = line.split(",");
+                theStudent = new Student(customer[0], customer[1], customer[2]);
+                students.add(theStudent);
+            }
+        } catch (IOException e) {
+            System.err.println(e.getMessage());
+        }
+        return students;
     }
 }

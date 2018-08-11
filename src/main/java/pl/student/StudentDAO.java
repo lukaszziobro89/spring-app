@@ -1,6 +1,8 @@
 package pl.student;
 
 import org.springframework.ui.Model;
+import org.springframework.web.multipart.MultipartFile;
+
 import java.util.List;
 
 public interface StudentDAO {
@@ -20,4 +22,7 @@ public interface StudentDAO {
 
     /** Add new student to database */
     void deleteStudent(int theId);
+
+    /** Adds students in bulk */
+    List<Student> bulkStudentAdd(MultipartFile file);
 }

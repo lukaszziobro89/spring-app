@@ -4,9 +4,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.StringTrimmerEditor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.validation.Valid;
 import java.util.List;
@@ -79,6 +81,13 @@ public class StudentController {
     public String deleteStudent(@RequestParam("studentId") int theId){
         studentDAO.deleteStudent(theId);
         return "redirect:/showStudents";
+    }
+
+    @RequestMapping(value = "/loadFile", method = RequestMethod.POST)
+    public String submit(@RequestParam("file") MultipartFile file, ModelMap modelMap) {
+        List<Student> students = studentDAO.bulkStudentAdd(file);
+        modelMap.addAttribute("theStudent", students);
+        return "bulkStudents";
     }
 
 }
