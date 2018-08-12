@@ -37,5 +37,8 @@ Select file to upload: <br />
 </table>
 </form:form>
 
+<form class="left_align" action="showStudents" method="get"><input type="submit" class="btn success" value="Show students list"/></form>
+<form class="left_align" action="<%=request.getContextPath() %>/"><input type="submit" class="btn success" value="Home page"/></form>
+
 </body>
 </html>
