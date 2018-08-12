@@ -15,15 +15,15 @@ Umberto,Tunnoch,utunnoch1@aboutads.info<br>
 Britni,Bunworth,bbunworth2@cdc.gov<br>
 <br>
 <h2>
-    Select file to upload:
+    Upload file:
     <form:form method="POST" action="bulkAddStudents" enctype="multipart/form-data" cssClass="center_align">
     <table>
-        <tr>
-            <td align="center"><label path="file">Select a file to upload</label></td>
+        <tr align="center">
+            <td align="center"><label path="file">Select a file to upload:</label></td>
             <td align="center"><input type="file" name="file" /></td>
         </tr>
         <tr>
-            <td><input type="submit" value="Submit" class="btn success"/></td>
+            <td align="center"><input type="submit" value="Submit" class="btn success"/></td>
         </tr>
     </table>
     </form:form>
