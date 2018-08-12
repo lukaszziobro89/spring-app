@@ -3,6 +3,8 @@
 <html>
 <head>
     <title>Load students</title>
+    <%@ page isELIgnored="false" %>
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/my-test.css">
 </head>
 <body>
 <br>

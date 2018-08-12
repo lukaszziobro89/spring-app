@@ -95,8 +95,10 @@ public class StudentDAOImpl implements StudentDAO{
         boolean isValidName = false;
         boolean isValidSurname = false;
         boolean isValidEmail = false;
+        String nameSurnameRegex = "/^[A-Za-z ']*$/";
         String emailRegex = "^[A-Za-z0-9+_.-]+@(.+)$";
         Pattern pattern = Pattern.compile(emailRegex);
+        Pattern pattern1 = Pattern.compile(nameSurnameRegex);
         Matcher matcher;
 
         try {
@@ -107,18 +109,31 @@ public class StudentDAOImpl implements StudentDAO{
                 result.add(line);
                 student = line.split(",");
 
+                isValidName = false;
+                isValidSurname = false;
                 isValidEmail = false;
                 String name = student[0];
                 String surname = student[1];
                 String email = student[2];
 
-                isValidName = name.chars().allMatch(Character::isLetter);
-                isValidSurname = surname.chars().allMatch(Character::isLetter);
+//                isValidName = name.chars().allMatch(Character::isLetter);
+//                isValidSurname = surname.chars().allMatch(Character::isLetter);
 
-                matcher = pattern.matcher(email);
-                if (matcher.matches()){
-                    isValidEmail = true;
-                }
+                    matcher = pattern.matcher(name);
+                    if (matcher.matches()){
+                        isValidName = true;
+                    }
+
+                    matcher = pattern.matcher(surname);
+                    if (matcher.matches()){
+                        isValidSurname = true;
+                    }
+
+                    matcher = pattern.matcher(email);
+                    if (matcher.matches()){
+                        isValidEmail = true;
+                    }
+
                 if (isValidName && name.length() >= 2 && isValidSurname && surname.length() >= 2 && isValidEmail){
                         theStudent = new Student(student[0], student[1], student[2]);
                         students.add(theStudent);
