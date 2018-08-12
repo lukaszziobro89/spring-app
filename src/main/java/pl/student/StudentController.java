@@ -83,7 +83,7 @@ public class StudentController {
         return "student/bulkLoadStudents";
     }
 
-    @RequestMapping(value = "/bulkAddStudents", method = RequestMethod.POST)
+    @RequestMapping(value = "bulkAddStudents", method = RequestMethod.POST)
     public String submit(@RequestParam("file") MultipartFile file, ModelMap modelMap) {
         ListHolder<Student, String> listHolder = studentDAO.bulkStudentAdd(file);
         modelMap.addAttribute("correctEntries", listHolder.getListOfCorrectStudentsEntries());
