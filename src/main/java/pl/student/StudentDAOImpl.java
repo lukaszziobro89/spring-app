@@ -146,12 +146,10 @@ public class StudentDAOImpl implements StudentDAO{
 
             if (!students.isEmpty()){
                 Session currentSession = sessionFactory.getCurrentSession();
-                Transaction tx = currentSession.beginTransaction();
                     for (Student tempStudent : students){
                         Student temp = new Student(name, surname, email);
                         currentSession.save(temp);
                     }
-                tx.commit();
             }
 
         } catch (IOException e) {
