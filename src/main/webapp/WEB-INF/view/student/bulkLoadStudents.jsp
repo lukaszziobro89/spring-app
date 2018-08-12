@@ -15,8 +15,8 @@ Umberto,Tunnoch,utunnoch1@aboutads.info<br>
 Britni,Bunworth,bbunworth2@cdc.gov<br>
 <br>
 <h2>
-    Select file:
-    <form:form method="POST" action="bulkAddStudents" enctype="multipart/form-data">
+    Select file to upload:
+    <form:form method="POST" action="bulkAddStudents" enctype="multipart/form-data" cssClass="center_align">
     <table>
         <tr>
             <td><label path="file">Select a file to upload</label></td>
