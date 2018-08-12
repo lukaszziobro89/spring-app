@@ -14,9 +14,8 @@ Amalle,Prattin,aprattin0@comsenz.com<br>
 Umberto,Tunnoch,utunnoch1@aboutads.info<br>
 Britni,Bunworth,bbunworth2@cdc.gov<br>
 <br>
-
+<h2>
     Select file:
-    <form class="btn success">
     <form:form method="POST" action="bulkAddStudents" enctype="multipart/form-data">
     <table>
         <tr>
@@ -28,8 +27,7 @@ Britni,Bunworth,bbunworth2@cdc.gov<br>
         </tr>
     </table>
     </form:form>
-    </form>
-
+</h2>
 <br><br>
 <form class="left_align" action="showStudents" method="get"><input type="submit" class="btn success" value="Show students list"/></form>
 <form class="left_align" action="<%=request.getContextPath() %>/"><input type="submit" class="btn success" value="Home page"/></form>
