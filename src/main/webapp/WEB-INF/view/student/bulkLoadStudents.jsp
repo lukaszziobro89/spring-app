@@ -16,10 +16,8 @@ Umberto,Tunnoch,utunnoch1@aboutads.info<br>
 Britni,Bunworth,bbunworth2@cdc.gov<br>
 <br>
 
-<h2>
-Select file to upload: <br />
-</h2>
 <form class="center_align">
+Select file to upload:
 <form:form method="POST" action="bulkAddStudents" enctype="multipart/form-data">
 <table>
 <tr>
