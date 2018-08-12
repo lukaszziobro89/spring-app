@@ -16,18 +16,12 @@ Britni,Bunworth,bbunworth2@cdc.gov<br>
 <br>
 <h2>
     Upload file:
-    <form:form method="POST" action="bulkAddStudents" enctype="multipart/form-data" cssClass="center_align">
-    <table>
-        <tr align="center">
-            <td align="center"><label path="file">Select a file to upload:</label></td>
-            <td align="center"><input type="file" name="file" /></td>
-        </tr>
-        <tr>
-            <td align="center"><input type="submit" value="Submit" class="btn success"/></td>
-        </tr>
-    </table>
-    </form:form>
 </h2>
+    <form:form method="POST" action="bulkAddStudents" enctype="multipart/form-data" cssClass="center_align">
+        <input type="file" name="file" class="btn success"/>
+        <input type="submit" value="Submit" class="btn success"/>
+    </form:form>
+
 <br><br>
 <form class="left_align" action="showStudents" method="get"><input type="submit" class="btn success" value="Show students list"/></form>
 <form class="left_align" action="<%=request.getContextPath() %>/"><input type="submit" class="btn success" value="Home page"/></form>
