@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7eed35ba-a5eb-43f1-b369-1a289b9475d9" name="Default" comment="" />
+    <list default="true" id="7eed35ba-a5eb-43f1-b369-1a289b9475d9" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/student/bulkLoadStudents.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/student/bulkLoadStudents.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/student/bulkStudents.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/student/bulkStudents.jsp" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -63,17 +66,17 @@
       <file leaf-file-name="bulkLoadStudents.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/student/bulkLoadStudents.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="378">
+              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="my-test.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/my-test.css">
+      <file leaf-file-name="student-confirmation.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/student/student-confirmation.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1666">
-              <caret line="104" column="1" selection-start-line="104" selection-start-column="1" selection-end-line="104" selection-end-column="1" />
+            <state relative-caret-position="259">
+              <caret line="22" column="12" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -81,8 +84,8 @@
       <file leaf-file-name="bulkStudents.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/student/bulkStudents.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+            <state relative-caret-position="361">
+              <caret line="43" column="133" selection-start-line="43" selection-start-column="133" selection-end-line="43" selection-end-column="133" />
             </state>
           </provider>
         </entry>
@@ -139,8 +142,8 @@
         <option value="$PROJECT_DIR$/src/main/java/pl/student/StudentDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/other/ListHolder.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/student/StudentController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/student/bulkStudents.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/pl/student/StudentDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/student/bulkStudents.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/student/bulkLoadStudents.jsp" />
       </list>
     </option>
@@ -379,12 +382,12 @@
       <option name="presentableId" value="Default" />
       <updated>1533658571831</updated>
       <workItem from="1533658573346" duration="4356000" />
-      <workItem from="1533897225419" duration="25278000" />
+      <workItem from="1533897225419" duration="25565000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29634000" />
+    <option name="totallyTimeSpent" value="29921000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1536" height="864" extended-state="0" />
@@ -411,8 +414,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32994923" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32994923" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49873096" visible="true" weight="0.21409395" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32994923" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49873096" visible="true" weight="0.21409395" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" sideWeight="0.50126904" side_tool="true" weight="0.21409395" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -529,20 +532,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/student/bulkStudents.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/my-test.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1666">
-          <caret line="104" column="1" selection-start-line="104" selection-start-column="1" selection-end-line="104" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/student/StudentController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="281">
@@ -570,10 +559,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/my-test.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="94" column="10" lean-forward="true" selection-start-line="94" selection-start-column="10" selection-end-line="94" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/student/bulkStudents.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="43" column="133" selection-start-line="43" selection-start-column="133" selection-end-line="43" selection-end-column="133" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/student/student-confirmation.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="22" column="12" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/student/bulkLoadStudents.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="378">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
         </state>
       </provider>
     </entry>

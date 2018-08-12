@@ -6,7 +6,7 @@
     <%@ page isELIgnored="false" %>
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/my-test.css">
 </head>
-<body>
+<form>
 <br>
 File to upload needs to be in txt format with list of details separated by comma ',':<br>
 Name,Surname,Email<br><br>
@@ -19,6 +19,7 @@ Britni,Bunworth,bbunworth2@cdc.gov<br>
 <h2>
 Select file to upload: <br />
 </h2>
+<form class="center_align">
 <form:form method="POST" action="bulkAddStudents" enctype="multipart/form-data">
 <table>
 <tr>
@@ -36,7 +37,9 @@ Select file to upload: <br />
 </tr>
 </table>
 </form:form>
+</form>
 
+<br><br>
 <form class="left_align" action="showStudents" method="get"><input type="submit" class="btn success" value="Show students list"/></form>
 <form class="left_align" action="<%=request.getContextPath() %>/"><input type="submit" class="btn success" value="Home page"/></form>
 
