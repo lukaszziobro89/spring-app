@@ -16,8 +16,8 @@ Britni,Bunworth,bbunworth2@cdc.gov<br>
 <br>
 
     Select file:
-    <form class="center_align">
-    <form:form method="POST" action="bulkAddStudents" enctype="multipart/form-data" cssClass="btn success">
+    <form class="btn success">
+    <form:form method="POST" action="bulkAddStudents" enctype="multipart/form-data">
     <table>
         <tr>
             <td><label path="file">Select a file to upload</label></td>
