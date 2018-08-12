@@ -95,7 +95,7 @@ public class StudentDAOImpl implements StudentDAO{
         boolean isValidName = false;
         boolean isValidSurname = false;
         boolean isValidEmail = false;
-        String nameSurnameRegex = "/^[A-Za-z ']*$/";
+        String nameSurnameRegex = "^[A-Za-z ']*$";
         String emailRegex = "^[A-Za-z0-9+_.-]+@(.+)$";
         Pattern pattern = Pattern.compile(emailRegex);
         Pattern pattern1 = Pattern.compile(nameSurnameRegex);

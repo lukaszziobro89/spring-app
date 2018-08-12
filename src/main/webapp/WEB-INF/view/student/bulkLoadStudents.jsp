@@ -22,7 +22,10 @@ Select file to upload: <br />
 <form:form method="POST" action="bulkAddStudents" enctype="multipart/form-data" cssClass="btn success">
 <table>
 <tr>
-<td><label path="file">Select a file to upload</label></td>
+<td><form class="center_align">
+    <label path="file" class="btn success">Select a file to upload</label>
+</form>
+</td>
 <td><input type="file" name="file" /></td>
 </tr>
 <tr>
