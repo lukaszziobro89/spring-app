@@ -18,7 +18,7 @@ Britni,Bunworth,bbunworth2@cdc.gov<br>
     Upload file:
 </h2>
     <form:form method="POST" action="bulkAddStudents" enctype="multipart/form-data" cssClass="center_align">
-        <input type="file" name="file" class="btn success"/>
+        <input type="file" name="file" class="btn success"/><br><br>
         <input type="submit" value="Submit" class="btn success"/>
     </form:form>
 

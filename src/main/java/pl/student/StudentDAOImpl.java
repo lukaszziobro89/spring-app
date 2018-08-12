@@ -2,6 +2,7 @@ package pl.student;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -79,7 +80,7 @@ public class StudentDAOImpl implements StudentDAO{
         theQuery.executeUpdate();
     }
 
-//    @Transactional
+    @Transactional
     public ListHolder<Student, String> bulkStudentAdd(MultipartFile file) {
         BufferedReader br;
         List<String> result = new ArrayList<>();
@@ -92,6 +93,9 @@ public class StudentDAOImpl implements StudentDAO{
         String invalidStudent;
         String[] student;
         Student theStudent;
+        String name = null;
+        String surname= null;
+        String email = null;
         boolean isValidName = false;
         boolean isValidSurname = false;
         boolean isValidEmail = false;
@@ -112,12 +116,9 @@ public class StudentDAOImpl implements StudentDAO{
                 isValidName = false;
                 isValidSurname = false;
                 isValidEmail = false;
-                String name = student[0];
-                String surname = student[1];
-                String email = student[2];
-
-//                isValidName = name.chars().allMatch(Character::isLetter);
-//                isValidSurname = surname.chars().allMatch(Character::isLetter);
+                name = student[0];
+                surname = student[1];
+                email = student[2];
 
                     matcher = nameSurnamePattern.matcher(name);
                     if (matcher.matches()){
@@ -140,11 +141,17 @@ public class StudentDAOImpl implements StudentDAO{
                     } else {
                        invalidStudent = name + " - " + surname + " - " + email;
                        invalidEntries.add(invalidStudent);
-                    }
+                }
             }
 
-            for (String invalidEntry : invalidEntries) {
-                System.out.println(invalidEntry);
+            if (!students.isEmpty()){
+                Session currentSession = sessionFactory.getCurrentSession();
+                Transaction tx = currentSession.beginTransaction();
+                    for (Student tempStudent : students){
+                        Student temp = new Student(name, surname, email);
+                        currentSession.save(temp);
+                    }
+                tx.commit();
             }
 
         } catch (IOException e) {
