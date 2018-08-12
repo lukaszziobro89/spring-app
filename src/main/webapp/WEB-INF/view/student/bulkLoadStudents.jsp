@@ -19,11 +19,11 @@ Britni,Bunworth,bbunworth2@cdc.gov<br>
     <form:form method="POST" action="bulkAddStudents" enctype="multipart/form-data" cssClass="center_align">
     <table>
         <tr>
-            <td><label path="file">Select a file to upload</label></td>
-            <td><input type="file" name="file" /></td>
+            <td align="center"><label path="file">Select a file to upload</label></td>
+            <td align="center"><input type="file" name="file" /></td>
         </tr>
         <tr>
-            <td><input type="submit" value="Submit"/></td>
+            <td><input type="submit" value="Submit" class="btn success"/></td>
         </tr>
     </table>
     </form:form>
