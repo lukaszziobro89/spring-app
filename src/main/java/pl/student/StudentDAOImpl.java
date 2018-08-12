@@ -97,8 +97,8 @@ public class StudentDAOImpl implements StudentDAO{
         boolean isValidEmail = false;
         String nameSurnameRegex = "^[A-Za-z ']*$";
         String emailRegex = "^[A-Za-z0-9+_.-]+@(.+)$";
-        Pattern pattern = Pattern.compile(emailRegex);
-        Pattern pattern1 = Pattern.compile(nameSurnameRegex);
+        Pattern emailPattern = Pattern.compile(emailRegex);
+        Pattern nameSurnamePattern = Pattern.compile(nameSurnameRegex);
         Matcher matcher;
 
         try {
@@ -119,17 +119,17 @@ public class StudentDAOImpl implements StudentDAO{
 //                isValidName = name.chars().allMatch(Character::isLetter);
 //                isValidSurname = surname.chars().allMatch(Character::isLetter);
 
-                    matcher = pattern.matcher(name);
+                    matcher = nameSurnamePattern.matcher(name);
                     if (matcher.matches()){
                         isValidName = true;
                     }
 
-                    matcher = pattern.matcher(surname);
+                    matcher = nameSurnamePattern.matcher(surname);
                     if (matcher.matches()){
                         isValidSurname = true;
                     }
 
-                    matcher = pattern.matcher(email);
+                    matcher = emailPattern.matcher(email);
                     if (matcher.matches()){
                         isValidEmail = true;
                     }

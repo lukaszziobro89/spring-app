@@ -19,17 +19,24 @@ Britni,Bunworth,bbunworth2@cdc.gov<br>
 <h2>
 Select file to upload: <br />
 </h2>
-<form:form method="POST" action="bulkAddStudents" enctype="multipart/form-data" cssClass="btn success">
+<form:form method="POST" action="bulkAddStudents" enctype="multipart/form-data" cssClass="center_align">
 <table>
 <tr>
-<td><form class="center_align">
-    <label path="file" class="btn success">Select a file to upload</label>
-</form>
+<td>
+    <label path="file">Select a file to upload</label>
 </td>
-<td><input type="file" name="file" /></td>
+<td>
+    <form class="center_align">
+        <input type="file" name="file" class="btn success"/>
+    </form>
+</td>
 </tr>
 <tr>
-<td><input type="submit" value="Submit" class="btn success"/></td>
+<td>
+    <form class="center_align">
+        <input type="submit" value="Submit" class="btn success"/>
+    </form>
+</td>
 </tr>
 </table>
 </form:form>
