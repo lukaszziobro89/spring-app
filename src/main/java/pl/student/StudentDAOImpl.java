@@ -8,6 +8,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
 import org.springframework.web.multipart.MultipartFile;
+import pl.other.ListHolder;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -79,11 +80,15 @@ public class StudentDAOImpl implements StudentDAO{
     }
 
 //    @Transactional
-    public List<Student> bulkStudentAdd(MultipartFile file) {
+    public ListHolder<Student, String> bulkStudentAdd(MultipartFile file) {
         BufferedReader br;
         List<String> result = new ArrayList<>();
+
         List<Student> students = new ArrayList<>();
         List<String> invalidEntries = new ArrayList<>();
+
+        ListHolder listHolder = new ListHolder<>(students, invalidEntries);
+
         String invalidStudent;
         String[] student;
         Student theStudent;
@@ -114,7 +119,7 @@ public class StudentDAOImpl implements StudentDAO{
                 if (matcher.matches()){
                     isValidEmail = true;
                 }
-                if (isValidName && name.length()>2 && isValidSurname && surname.length()>2 && isValidEmail){
+                if (isValidName && name.length() >= 2 && isValidSurname && surname.length() >= 2 && isValidEmail){
                         theStudent = new Student(student[0], student[1], student[2]);
                         students.add(theStudent);
                     } else {
@@ -130,6 +135,6 @@ public class StudentDAOImpl implements StudentDAO{
         } catch (IOException e) {
             System.err.println(e.getMessage());
         }
-        return students;
+        return listHolder;
     }
 }

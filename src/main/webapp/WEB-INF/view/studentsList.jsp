@@ -24,20 +24,20 @@
             <th>Email</th>
             <th>Action</th>
         </tr>
-        <c:forEach var="tempStudent" items="${student}" >
+        <c:forEach var="correctStudent" items="${student}" >
             <c:url var="updateButton" value="showUpdateForm">
-                <c:param name="studentId" value="${tempStudent.id}"/>
+                <c:param name="studentId" value="${correctStudent.id}"/>
             </c:url>
 
             <c:url var="deleteButton" value="delete">
-                <c:param name="studentId" value="${tempStudent.id}"/>
+                <c:param name="studentId" value="${correctStudent.id}"/>
             </c:url>
 
             <tr>
-                <td>${tempStudent.id}</td>
-                <td>${tempStudent.firstName}</td>
-                <td>${tempStudent.lastName}</td>
-                <td>${tempStudent.email}</td>
+                <td>${correctStudent.id}</td>
+                <td>${correctStudent.firstName}</td>
+                <td>${correctStudent.lastName}</td>
+                <td>${correctStudent.email}</td>
                 <td style="width:20%">
                     <form class="buttons">
                         <a href="${updateButton}"><button type="button" class="btn info">Update student</button></a>

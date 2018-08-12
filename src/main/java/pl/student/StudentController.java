@@ -9,6 +9,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+import pl.other.ListHolder;
 
 import javax.validation.Valid;
 import java.util.List;
@@ -84,9 +85,9 @@ public class StudentController {
 
     @RequestMapping(value = "/bulkAddStudents", method = RequestMethod.POST)
     public String submit(@RequestParam("file") MultipartFile file, ModelMap modelMap) {
-        List<Student> students = studentDAO.bulkStudentAdd(file);
-        modelMap.addAttribute("theStudent", students);
+        ListHolder<Student, String> listHolder = studentDAO.bulkStudentAdd(file);
+        modelMap.addAttribute("correctEntries", listHolder.getListOfCorrectStudentsEntries());
+        modelMap.addAttribute("incorrectEntries", listHolder.getListOfIncorrectStudentsEntries());
         return "student/bulkStudents";
     }
-
 }

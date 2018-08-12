@@ -2,6 +2,7 @@ package pl.student;
 
 import org.springframework.ui.Model;
 import org.springframework.web.multipart.MultipartFile;
+import pl.other.ListHolder;
 
 import java.util.List;
 
@@ -24,5 +25,5 @@ public interface StudentDAO {
     void deleteStudent(int theId);
 
     /** Adds students in bulk */
-    List<Student> bulkStudentAdd(MultipartFile file);
+    ListHolder<Student, String> bulkStudentAdd(MultipartFile file);
 }
