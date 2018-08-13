@@ -54,9 +54,9 @@
         </c:forEach>
     </table>
 
-<br><br>
-    <form class="left_align" action="addStudent" method="post"><input type="submit" class="btn success" value="Add Student"/></form>
+<br>
+    <form class="right_align" action="addStudent" method="post"><input type="submit" class="btn success" value="Add Student"/></form><br>
+    <form class="center_align" action="showBulkAddForm"><input type="submit" class="btn success" value="Bulk add students"/></form><br>
     <form class="left_align" action="<%=request.getContextPath() %>/"><input type="submit" class="btn success" value="Home page"/></form>
-
 </body>
 </html>
