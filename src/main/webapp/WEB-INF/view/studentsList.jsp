@@ -16,7 +16,7 @@
 
     <h2>Students list</h2>
     <br><br>
-        <form class="left_align" action="truncateStudentTable" method="post"><input type="submit" class="btn danger" value="Truncate data (remove all rows)"/></form>
+        <form class="right_align" action="truncateStudentTable" method="post"><input type="submit" class="btn danger" value="Truncate data (remove all rows)"/></form>
     <br><br>
 
     <table id="results" border="1" cellpadding="5" cellspacing="1" >
@@ -55,8 +55,8 @@
     </table>
 
 <br>
-    <form class="right_align" action="addStudent" method="post"><input type="submit" class="btn success" value="Add Student"/></form><br>
-    <form class="center_align" action="showBulkAddForm"><input type="submit" class="btn success" value="Bulk add students"/></form><br>
+    <form class="left_align" action="addStudent" method="post"><input type="submit" class="btn success" value="Add Student"/></form><br>
+    <form class="left_align" action="showBulkAddForm"><input type="submit" class="btn success" value="Bulk add students"/></form><br>
     <form class="left_align" action="<%=request.getContextPath() %>/"><input type="submit" class="btn success" value="Home page"/></form>
 </body>
 </html>
