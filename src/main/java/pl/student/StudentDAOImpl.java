@@ -147,7 +147,7 @@ public class StudentDAOImpl implements StudentDAO{
             if (!students.isEmpty()){
                 Session currentSession = sessionFactory.getCurrentSession();
                     for (Student tempStudent : students){
-                        Student temp = new Student(name, surname, email);
+                        Student temp = new Student(tempStudent.getFirstName(), tempStudent.getLastName(), tempStudent.getEmail());
                         currentSession.save(temp);
                     }
             }
