@@ -162,7 +162,7 @@ public class StudentDAOImpl implements StudentDAO{
     @Transactional
     public void truncateTable() {
         Session currentSession = sessionFactory.getCurrentSession();
-        Query theQuery = currentSession.createQuery("delete from Student");
+        Query theQuery = currentSession.createNativeQuery("truncate table Student");
         theQuery.executeUpdate();
     }
 }
