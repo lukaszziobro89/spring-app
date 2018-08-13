@@ -1,5 +1,6 @@
 body {
     background-color: white;
+    font-family: Verdana;
 }
 
 h2 {
@@ -125,4 +126,10 @@ form.right_align{
     text-align: left;
     background-color: #4CAF50;
     color: white;
+}
+
+img.center_align{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

@@ -6,13 +6,22 @@
     <%@ page isELIgnored="false" %>
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/my-test.css">
 </head>
+<body>
 <br>
 File to upload needs to be in txt format with list of details separated by comma ',':<br>
 Name,Surname,Email<br><br>
-Example:<br>
+<b>Example:</b><br>
 Amalle,Prattin,aprattin0@comsenz.com<br>
 Umberto,Tunnoch,utunnoch1@aboutads.info<br>
 Britni,Bunworth,bbunworth2@cdc.gov<br>
+<br>
+<br>
+<b>Example file to upload:</b><br>
+    <p>
+        <a href="${pageContext.request.contextPath}/resources/students_list.txt" download >
+            <img class="center_align" border="0" src="${pageContext.request.contextPath}/resources/file_icon.png" width="100" height="100">
+        </a>
+    </p>
 <br>
 <h2>
     Upload file:
