@@ -9,7 +9,7 @@
 <body>
 <br>
 File to upload needs to be in txt format with list of details separated by comma ',':<br>
-Name,Surname,Email<br><br>
+<i>Name,Surname,Email</i><br><br>
 <b>Example:</b><br>
 Amalle,Prattin,aprattin0@comsenz.com<br>
 Umberto,Tunnoch,utunnoch1@aboutads.info<br>
