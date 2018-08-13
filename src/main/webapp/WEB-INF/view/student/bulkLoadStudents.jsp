@@ -16,7 +16,7 @@ Umberto,Tunnoch,utunnoch1@aboutads.info<br>
 Britni,Bunworth,bbunworth2@cdc.gov<br>
 <br>
 <br>
-<b>Example file to upload:</b><br>
+<h2>Example file to upload:</h2><br>
     <p>
         <a href="${pageContext.request.contextPath}/resources/students_list.txt" download >
             <img class="center_align" border="0" src="${pageContext.request.contextPath}/resources/file_icon.png" width="100" height="100">
