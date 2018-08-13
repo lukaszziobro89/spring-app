@@ -90,4 +90,10 @@ public class StudentController {
         modelMap.addAttribute("incorrectEntries", listHolder.getListOfIncorrectStudentsEntries());
         return "student/bulkStudents";
     }
+
+    @RequestMapping(value = "truncateStudentTable")
+    public String truncateStudentTable() {
+        studentDAO.truncateTable();
+        return "redirect:/showStudents";
+    }
 }

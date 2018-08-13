@@ -157,4 +157,12 @@ public class StudentDAOImpl implements StudentDAO{
         }
         return listHolder;
     }
+
+    @Override
+    @Transactional
+    public void truncateTable() {
+        Session currentSession = sessionFactory.getCurrentSession();
+        Query theQuery = currentSession.createQuery("truncate table Student");
+        theQuery.executeUpdate();
+    }
 }

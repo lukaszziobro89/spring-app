@@ -26,4 +26,8 @@ public interface StudentDAO {
 
     /** Adds students in bulk */
     ListHolder<Student, String> bulkStudentAdd(MultipartFile file);
+
+    /** Truncates/removes all rows from Student table */
+    void truncateTable();
+
 }
