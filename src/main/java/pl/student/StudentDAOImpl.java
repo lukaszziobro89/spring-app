@@ -171,7 +171,7 @@ public class StudentDAOImpl implements StudentDAO{
             br = new BufferedReader(new InputStreamReader(is));
             while ((line = br.readLine()) != null) {
                 try {
-                    singleId = tryParse(line);
+                    singleId = Integer.parseInt(line.trim());
                     idList.add(singleId);
                 } catch (Exception e) {
                     incorrectIds.add(line);

@@ -8,7 +8,7 @@
 </head>
 <body>
 <h2>
-    List of uploaded students:
+    List of deleted students:
 </h2>
 <table id="results" border="1" cellpadding="5" cellspacing="1" >
     <tr>
@@ -22,7 +22,7 @@
 </table>
 <br><br>
 <h2>
-    List of incorrect entries:
+    List of incorrect IDs:
 </h2>
 <table id="results" border="1" cellpadding="5" cellspacing="1" >
     <tr>
