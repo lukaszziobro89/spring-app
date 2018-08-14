@@ -10,7 +10,6 @@ import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import pl.other.ListHolder;
-
 import javax.validation.Valid;
 import java.util.List;
 
