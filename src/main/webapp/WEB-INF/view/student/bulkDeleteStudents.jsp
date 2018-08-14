@@ -26,7 +26,7 @@ File to upload needs to be in txt format with list of integer IDs - each one in 
 <h2>
     Upload file:
 </h2>
-<form:form method="POST" action="bulkStudentsDelete" enctype="multipart/form-data" cssClass="center_align">
+<form:form method="POST" action="bulkDeleteStudents" enctype="multipart/form-data" cssClass="center_align">
     <input type="file" name="file" class="btn success"/><br><br>
     <input type="submit" value="Submit" class="btn success"/>
 </form:form>
