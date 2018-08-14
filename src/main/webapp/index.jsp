@@ -19,6 +19,7 @@
 <form class="center_align" action="showForm"><input type="submit" class="btn success" value="Various"/></form>
 <form class="center_align" action="addStudent" method="post"><input type="submit" class="btn success" value="Add student"/></form>
 <form class="center_align" action="showBulkAddForm"><input type="submit" class="btn success" value="Bulk add students"/></form>
+<form class="center_align" action="showBulkDeleteForm"><input type="submit" class="btn success" value="Bulk delete students"/></form>
 <form class="center_align" action="showStudents" method="get"><input type="submit" class="btn success" value="Show students list"/></form>
 <br>
 <br>

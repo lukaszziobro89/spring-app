@@ -91,7 +91,7 @@ public class StudentController {
         return "student/bulkLoadConfirmation";
     }
 
-    @RequestMapping(value = "bulkStudentsDelete", method = RequestMethod.POST)
+    @RequestMapping(value = "showBulkDeleteForm")
     public String bulkStudentsDelete(@RequestParam("file") MultipartFile file, ModelMap modelMap) {
         ListHolder<Integer, String> listHolder = studentDAO.bulkStudentsDelete(file);
         modelMap.addAttribute("correctEntries", listHolder.getListOfCorrectEntries());
