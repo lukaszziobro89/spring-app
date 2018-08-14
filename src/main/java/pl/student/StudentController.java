@@ -78,6 +78,11 @@ public class StudentController {
         return "redirect:/showStudents";
     }
 
+    @RequestMapping(value = "showBulkDeleteForm")
+    public String showBulkDeleteForm() {
+        return "student/bulkDeleteStudents";
+    }
+
     @RequestMapping(value = "showBulkAddForm")
     public String showBulkAddForm() {
         return "student/bulkLoadStudents";
@@ -91,7 +96,7 @@ public class StudentController {
         return "student/bulkLoadConfirmation";
     }
 
-    @RequestMapping(value = "showBulkDeleteForm")
+    @RequestMapping(value = "bulkDeleteStudents", method = RequestMethod.POST)
     public String bulkStudentsDelete(@RequestParam("file") MultipartFile file, ModelMap modelMap) {
         ListHolder<Integer, String> listHolder = studentDAO.bulkStudentsDelete(file);
         modelMap.addAttribute("correctEntries", listHolder.getListOfCorrectEntries());

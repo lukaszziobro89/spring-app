@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7eed35ba-a5eb-43f1-b369-1a289b9475d9" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/student/bulkDeleteConfirmation.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/student/bulkDeleteStudents.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/ids_list.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/709ab9e9-5d90-4a3c-b693-43d3616cc086.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/709ab9e9-5d90-4a3c-b693-43d3616cc086.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/other/ListHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/other/ListHolder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/student/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/student/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/student/StudentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/student/StudentDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/student/StudentDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/student/StudentDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/student/bulkStudents.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/student/bulkLoadConfirmation.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="7eed35ba-a5eb-43f1-b369-1a289b9475d9" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -53,15 +42,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="StudentDAOImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/student/StudentDAOImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="162" column="39" selection-start-line="162" selection-start-column="39" selection-end-line="162" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ListHolder.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/other/ListHolder.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -71,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StudentController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="StudentController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/student/StudentController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="553">
-              <caret line="98" column="48" lean-forward="true" selection-start-line="98" selection-start-column="48" selection-end-line="98" selection-end-column="48" />
+            <state relative-caret-position="400">
+              <caret line="93" column="48" lean-forward="true" selection-start-line="93" selection-start-column="48" selection-end-line="93" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -89,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bulkDeleteConfirmation.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bulkDeleteConfirmation.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/student/bulkDeleteConfirmation.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="323">
+              <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -130,7 +110,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/student/bulkStudents.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/css/my-test.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/students_list.txt" />
@@ -140,10 +119,11 @@
         <option value="$PROJECT_DIR$/src/main/webapp/resources/ids_list.txt" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/student/bulkDeleteStudents.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/student/bulkLoadConfirmation.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/student/StudentDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/other/ListHolder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/student/StudentController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/student/bulkDeleteConfirmation.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/student/StudentController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/student/StudentDAOImpl.java" />
       </list>
     </option>
   </component>
@@ -381,12 +361,12 @@
       <workItem from="1533897225419" duration="31735000" />
       <workItem from="1534097866966" duration="3300000" />
       <workItem from="1534159104949" duration="10186000" />
-      <workItem from="1534230564103" duration="6515000" />
+      <workItem from="1534230564103" duration="6831000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56092000" />
+    <option name="totallyTimeSpent" value="56408000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1536" height="864" extended-state="0" />
@@ -565,13 +545,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/my-test.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -631,10 +604,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="4" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/student/bulkDeleteConfirmation.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/student/bulkLoadStudents.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="24" column="4" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/student/StudentDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="162" column="39" selection-start-line="162" selection-start-column="39" selection-end-line="162" selection-end-column="39" />
+        <state relative-caret-position="109">
+          <caret line="159" column="4" selection-start-line="159" selection-start-column="4" selection-end-line="159" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -647,22 +641,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/student/StudentController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="98" column="48" lean-forward="true" selection-start-line="98" selection-start-column="48" selection-end-line="98" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/student/bulkLoadStudents.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="24" column="4" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/student/bulkDeleteConfirmation.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="400">
+          <caret line="93" column="48" lean-forward="true" selection-start-line="93" selection-start-column="48" selection-end-line="93" selection-end-column="48" />
         </state>
       </provider>
     </entry>
