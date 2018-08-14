@@ -25,20 +25,22 @@ public interface StudentDAO {
                         Student theStudent,
                         Model theModel);
 
+//    /** Add new student to database */
+//    default void deleteStudent(int theId){
+//        Session currentSession = sessionFactory.getCurrentSession();
+//        Query theQuery = currentSession.createQuery("delete from Student where id=:studentId");
+//        theQuery.setParameter("studentId", theId);
+//        theQuery.executeUpdate();
+//    }
+
     /** Add new student to database */
-    default void deleteStudent(int theId, SessionFactory sessionFactory){
-        Session currentSession = sessionFactory.getCurrentSession();
-        Query theQuery = currentSession.createQuery("delete from Student where id=:studentId");
-        theQuery.setParameter("studentId", theId);
-        theQuery.executeUpdate();
-    }
+    default void deleteStudent(int theID){};
 
     /** Adds students in bulk */
     ListHolder<Integer, String> bulkStudentsDelete(MultipartFile file);
 
     /** Remove students in bulk using IDs */
     ListHolder<Student, String> bulkStudentAdd(MultipartFile file);
-
 
     /** Truncates/removes all rows from Student table */
     void truncateTable();

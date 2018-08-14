@@ -72,15 +72,23 @@ public class StudentDAOImpl implements StudentDAO{
             return theStudent;
     }
 
+//    @Transactional
+//    public void deleteStudent(int theId, SessionFactory sessionFactory) {
+//        Session currentSession = sessionFactory.getCurrentSession();
+//        Query theQuery = currentSession.createQuery("delete from Student where id=:studentId");
+//        theQuery.setParameter("studentId", theId);
+//        theQuery.executeUpdate();
+//    }
+
+
+    @Override
     @Transactional
-    public void deleteStudent(int theId, SessionFactory sessionFactory) {
+    public void deleteStudent(int theID) {
         Session currentSession = sessionFactory.getCurrentSession();
         Query theQuery = currentSession.createQuery("delete from Student where id=:studentId");
-        theQuery.setParameter("studentId", theId);
+        theQuery.setParameter("studentId", theID);
         theQuery.executeUpdate();
     }
-
-
 
     @Transactional
     public ListHolder<Student, String> bulkStudentAdd(MultipartFile file) {
@@ -186,7 +194,7 @@ public class StudentDAOImpl implements StudentDAO{
         if (!idList.isEmpty()){
             StudentDAO studentDAO = new StudentDAOImpl(sessionFactory);
             for (Integer id : idList){
-                studentDAO.deleteStudent(id, sessionFactory);
+                studentDAO.deleteStudent(id);
             }
         }
         return listHolder;
