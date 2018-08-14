@@ -1,5 +1,9 @@
 package pl.student;
 
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.query.Query;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.multipart.MultipartFile;
 import pl.other.ListHolder;
@@ -22,7 +26,12 @@ public interface StudentDAO {
                         Model theModel);
 
     /** Add new student to database */
-    void deleteStudent(int theId);
+    default void deleteStudent(int theId, SessionFactory sessionFactory){
+        Session currentSession = sessionFactory.getCurrentSession();
+        Query theQuery = currentSession.createQuery("delete from Student where id=:studentId");
+        theQuery.setParameter("studentId", theId);
+        theQuery.executeUpdate();
+    }
 
     /** Adds students in bulk */
     ListHolder<Integer, String> bulkStudentsDelete(MultipartFile file);

@@ -74,7 +74,7 @@ public class StudentController {
 
     @GetMapping(value = "delete")
     public String deleteStudent(@RequestParam("studentId") int theId){
-        studentDAO.deleteStudent(theId);
+        StudentDAO.deleteStudent(theId);
         return "redirect:/showStudents";
     }
 

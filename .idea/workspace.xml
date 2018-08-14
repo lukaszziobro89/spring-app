@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7eed35ba-a5eb-43f1-b369-1a289b9475d9" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/student/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/student/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/student/StudentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/student/StudentDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/student/StudentDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/student/StudentDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/student/bulkDeleteConfirmation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/student/bulkDeleteConfirmation.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,17 +50,17 @@
       <file leaf-file-name="StudentDAOImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/student/StudentDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="172" column="21" selection-start-line="172" selection-start-column="21" selection-end-line="172" selection-end-column="21" />
+            <state relative-caret-position="263">
+              <caret line="164" column="26" lean-forward="true" selection-start-line="164" selection-start-column="26" selection-end-line="164" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StudentController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/student/StudentController.java">
+      <file leaf-file-name="StudentDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/student/StudentDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="98" column="47" selection-start-line="98" selection-start-column="29" selection-end-line="98" selection-end-column="47" />
+            <state relative-caret-position="349">
+              <caret line="29" column="40" lean-forward="true" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -76,6 +78,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>alphab</find>
+      <find>dao</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -100,15 +103,15 @@
         <option value="$PROJECT_DIR$/src/main/webapp/resources/students_list.txt" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/student/bulkLoadStudents.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/studentsList.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/student/StudentDAO.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/student/bulkLoadConfirmation.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/pl/other/ListHolder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/student/StudentController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/ids_list.txt" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/student/bulkDeleteStudents.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/student/bulkDeleteConfirmation.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/student/StudentController.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/student/StudentDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/student/StudentDAO.java" />
       </list>
     </option>
   </component>
@@ -251,7 +254,7 @@
     <property name="ignore_missing_gitignore" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.34429824" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -346,15 +349,16 @@
       <workItem from="1533897225419" duration="31735000" />
       <workItem from="1534097866966" duration="3300000" />
       <workItem from="1534159104949" duration="10186000" />
-      <workItem from="1534230564103" duration="7499000" />
+      <workItem from="1534230564103" duration="11796000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57076000" />
+    <option name="totallyTimeSpent" value="61373000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1536" height="864" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32994923" />
@@ -376,8 +380,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32994923" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32994923" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49873096" visible="true" weight="0.22281879" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32994923" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49873096" visible="true" weight="0.22281879" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" sideWeight="0.50126904" side_tool="true" weight="0.21409395" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -561,13 +565,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/student/StudentDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/ids_list.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -617,17 +614,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.2.8.Final/hibernate-core-5.2.8.Final.jar!/org/hibernate/Session.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="93" column="9" selection-start-line="93" selection-start-column="9" selection-end-line="93" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/student/StudentController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="98" column="47" selection-start-line="98" selection-start-column="29" selection-end-line="98" selection-end-column="47" />
+        <state relative-caret-position="246">
+          <caret line="76" column="19" selection-start-line="76" selection-start-column="19" selection-end-line="76" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/student/StudentDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="29" column="40" lean-forward="true" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/student/StudentDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="172" column="21" selection-start-line="172" selection-start-column="21" selection-end-line="172" selection-end-column="21" />
+        <state relative-caret-position="263">
+          <caret line="164" column="26" lean-forward="true" selection-start-line="164" selection-start-column="26" selection-end-line="164" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -685,11 +696,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Web|spring-app</last-edited>
+          <last-edited>spring-app</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.34429824" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
