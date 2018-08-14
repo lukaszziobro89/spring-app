@@ -86,9 +86,17 @@ public class StudentController {
     @RequestMapping(value = "bulkAddStudents", method = RequestMethod.POST)
     public String bulkAddStudents(@RequestParam("file") MultipartFile file, ModelMap modelMap) {
         ListHolder<Student, String> listHolder = studentDAO.bulkStudentAdd(file);
-        modelMap.addAttribute("correctEntries", listHolder.getListOfCorrectStudentsEntries());
-        modelMap.addAttribute("incorrectEntries", listHolder.getListOfIncorrectStudentsEntries());
-        return "student/bulkStudents";
+        modelMap.addAttribute("correctEntries", listHolder.getListOfCorrectEntries());
+        modelMap.addAttribute("incorrectEntries", listHolder.getListOfIncorrectEntries());
+        return "student/bulkLoadConfirmation";
+    }
+
+    @RequestMapping(value = "bulkStudentsDelete", method = RequestMethod.POST)
+    public String bulkStudentsDelete(@RequestParam("file") MultipartFile file, ModelMap modelMap) {
+        ListHolder<Integer, String> listHolder = studentDAO.bulkStudentsDelete(file);
+        modelMap.addAttribute("correctEntries", listHolder.getListOfCorrectEntries());
+        modelMap.addAttribute("incorrectEntries", listHolder.getListOfIncorrectEntries());
+        return "student/bulkDeleteConfirmation";
     }
 
     @RequestMapping(value = "truncateStudentTable")

@@ -25,7 +25,11 @@ public interface StudentDAO {
     void deleteStudent(int theId);
 
     /** Adds students in bulk */
+    ListHolder<Integer, String> bulkStudentsDelete(MultipartFile file);
+
+    /** Remove students in bulk using IDs */
     ListHolder<Student, String> bulkStudentAdd(MultipartFile file);
+
 
     /** Truncates/removes all rows from Student table */
     void truncateTable();

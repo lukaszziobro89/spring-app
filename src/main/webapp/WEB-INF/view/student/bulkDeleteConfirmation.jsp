@@ -2,7 +2,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Bulk confirmation</title>
+    <title>Bulk delete confirmation</title>
     <%@ page isELIgnored="false" %>
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/my-test.css">
 </head>
@@ -12,15 +12,11 @@
 </h2>
 <table id="results" border="1" cellpadding="5" cellspacing="1" >
     <tr>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Email</th>
+        <th>ID</th>
     </tr>
     <c:forEach var="correctStudent" items="${correctEntries}" >
         <tr>
-            <td>${correctStudent.firstName}</td>
-            <td>${correctStudent.lastName}</td>
-            <td>${correctStudent.email}</td>
+            <td>${correctStudent}</td>
         </tr>
     </c:forEach>
 </table>

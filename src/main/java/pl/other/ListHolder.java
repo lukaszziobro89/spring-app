@@ -3,19 +3,19 @@ package pl.other;
 import java.util.List;
 
 public class ListHolder<Student, String> {
-    private List<Student> listOfCorrectStudentsEntries;
-    private List<String> listOfIncorrectStudentsEntries;
+    private List<Student> listOfCorrectEntries;
+    private List<String> listOfIncorrectEntries;
 
     public ListHolder(List<Student> correctStudentsEntries, List<String> incorrectStudentsEntries) {
-        this.listOfCorrectStudentsEntries = correctStudentsEntries;
-        this.listOfIncorrectStudentsEntries = incorrectStudentsEntries;
+        this.listOfCorrectEntries = correctStudentsEntries;
+        this.listOfIncorrectEntries = incorrectStudentsEntries;
     }
 
-    public List<Student> getListOfCorrectStudentsEntries() {
-        return listOfCorrectStudentsEntries;
+    public List<Student> getListOfCorrectEntries() {
+        return listOfCorrectEntries;
     }
 
-    public List<String> getListOfIncorrectStudentsEntries() {
-        return listOfIncorrectStudentsEntries;
+    public List<String> getListOfIncorrectEntries() {
+        return listOfIncorrectEntries;
     }
 }

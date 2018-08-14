@@ -93,12 +93,12 @@ public class StudentDAOImpl implements StudentDAO{
         String invalidStudent;
         String[] student;
         Student theStudent;
-        String name = null;
-        String surname= null;
-        String email = null;
-        boolean isValidName = false;
-        boolean isValidSurname = false;
-        boolean isValidEmail = false;
+        String name;
+        String surname;
+        String email;
+        boolean isValidName;
+        boolean isValidSurname;
+        boolean isValidEmail;
         String nameSurnameRegex = "^[A-Za-z ']*$";
         String emailRegex = "^[A-Za-z0-9+_.-]+@(.+)$";
         Pattern emailPattern = Pattern.compile(emailRegex);
@@ -160,9 +160,47 @@ public class StudentDAOImpl implements StudentDAO{
 
     @Override
     @Transactional
+    public ListHolder<Integer, String> bulkStudentsDelete(MultipartFile file) {
+        BufferedReader br;
+        List<Integer> idList = new ArrayList<>();
+        List<String> incorrectIds = new ArrayList<>();
+        ListHolder<Integer, String> listHolder = new ListHolder<>(idList, incorrectIds);
+        Integer singleId;
+        try {
+            String line;
+            InputStream is = file.getInputStream();
+            br = new BufferedReader(new InputStreamReader(is));
+            while ((line = br.readLine()) != null) {
+                try {
+                    singleId = tryParse(line);
+                    idList.add(singleId);
+                } catch (Exception e) {
+                    incorrectIds.add(line);
+                }
+            }
+        } catch (IOException e) {
+            System.err.println(e.getMessage());
+        }
+        for(Integer id : idList){
+            System.out.println(id);
+        }
+        return listHolder;
+    }
+
+    @Override
+    @Transactional
     public void truncateTable() {
         Session currentSession = sessionFactory.getCurrentSession();
         Query theQuery = currentSession.createNativeQuery("truncate table student");
         theQuery.executeUpdate();
     }
+
+    private static Integer tryParse(String text) {
+        try {
+            return Integer.parseInt(text.trim());
+        } catch (NumberFormatException e) {
+            return 0;
+        }
+    }
+
 }

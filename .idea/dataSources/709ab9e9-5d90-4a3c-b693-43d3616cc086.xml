@@ -956,56 +956,83 @@
       <Engine>InnoDB</Engine>
       <Collation>latin1_swedish_ci</Collation>
     </table>
-    <column id="240" parent="238" name="id">
+    <table id="240" parent="3" name="test_table">
+      <Engine>InnoDB</Engine>
+    </table>
+    <column id="241" parent="238" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="241" parent="238" name="first_name">
+    <column id="242" parent="238" name="first_name">
       <Position>2</Position>
       <DataType>varchar(45)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="242" parent="238" name="last_name">
+    <column id="243" parent="238" name="last_name">
       <Position>3</Position>
       <DataType>varchar(45)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="243" parent="238" name="email">
+    <column id="244" parent="238" name="email">
       <Position>4</Position>
       <DataType>varchar(45)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="244" parent="238" name="PRIMARY">
+    <key id="245" parent="238" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="245" parent="239" name="id">
+    <column id="246" parent="239" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="246" parent="239" name="first_name">
+    <column id="247" parent="239" name="first_name">
       <Position>2</Position>
       <DataType>varchar(45)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="247" parent="239" name="last_name">
+    <column id="248" parent="239" name="last_name">
       <Position>3</Position>
       <DataType>varchar(45)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="248" parent="239" name="email">
+    <column id="249" parent="239" name="email">
       <Position>4</Position>
       <DataType>varchar(45)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="249" parent="239" name="PRIMARY">
+    <key id="250" parent="239" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="251" parent="240" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="252" parent="240" name="first_name">
+      <Position>2</Position>
+      <DataType>varchar(45)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="253" parent="240" name="last_name">
+      <Position>3</Position>
+      <DataType>varchar(45)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="254" parent="240" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
