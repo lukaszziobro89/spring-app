@@ -17,7 +17,7 @@
     <h2>Students list</h2>
     <br><br>
         <p>
-            <form:form action="customer/search" method="POST">
+            <form:form action="search" method="POST">
                 Search student: <input type="text" name="theSearchName" />
                 <input type="submit" value="Search" class="add-button" />
             </form:form>
