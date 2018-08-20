@@ -24,8 +24,6 @@
         </form:form>
     <%--<form class="left_align" action="showStudents" method="get"><input type="submit" value="Clear search filter"/></form>--%>
     <form class="left_align" action="showStudents" method="get"><input type="submit" class="btn clear_search" value="Clear search filter"/></form>
-    <br>
-    <a href="showStudents">Clear search filter</a>
 
         <form class="right_align" action="truncateStudentTable" method="post">
             <input type="submit" class="btn danger" value="Truncate data (remove all rows)"

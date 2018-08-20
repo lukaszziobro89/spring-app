@@ -97,11 +97,11 @@ form.right_align{
 
 .clear_search {
     border-color: #c537ff;
-    color: #ffffff;
+    color: #c537ff;
 }
 
 .clear_search:hover {
-    background: #95ffd6;
+    background: #c537ff;
     color: #ffffff;
 }
 
