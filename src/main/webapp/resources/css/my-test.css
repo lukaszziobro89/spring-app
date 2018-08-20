@@ -95,6 +95,16 @@ form.right_align{
     color: white;
 }
 
+.clear_search {
+    border-color: #95ffd6;
+    color: #95ffd6;
+}
+
+.clear_search:hover {
+    background: #95ffd6;
+    color: #95ffd6;
+}
+
 /* Red */
 .danger {
     border-color: #f44336;

@@ -74,7 +74,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/studentsList.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="412">
-              <caret line="26" column="113" selection-start-line="26" selection-start-column="113" selection-end-line="26" selection-end-column="113" />
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="n#style#0;n#input#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#4;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -416,12 +416,12 @@
       <workItem from="1534535670381" duration="3886000" />
       <workItem from="1534605092626" duration="1862000" />
       <workItem from="1534664683045" duration="593000" />
-      <workItem from="1534760482490" duration="4216000" />
+      <workItem from="1534760482490" duration="4460000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88044000" />
+    <option name="totallyTimeSpent" value="88288000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1536" height="864" extended-state="0" />
@@ -854,7 +854,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/studentsList.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="412">
-          <caret line="26" column="113" selection-start-line="26" selection-start-column="113" selection-end-line="26" selection-end-column="113" />
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="n#style#0;n#input#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#4;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
