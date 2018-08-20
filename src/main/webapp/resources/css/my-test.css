@@ -96,13 +96,13 @@ form.right_align{
 }
 
 .clear_search {
-    border-color: #95ffd6;
-    color: #95ffd6;
+    border-color: #c537ff;
+    color: #ffffff;
 }
 
 .clear_search:hover {
     background: #95ffd6;
-    color: #95ffd6;
+    color: #ffffff;
 }
 
 /* Red */
