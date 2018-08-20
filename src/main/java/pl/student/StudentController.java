@@ -108,4 +108,13 @@ public class StudentController {
         studentDAO.truncateTable();
         return "redirect:/showStudents";
     }
+
+    @PostMapping("search")
+    public String searchCustomers(@RequestParam("theSearchName") String theSearchName,
+                                  Model theModel) {
+        List<Student> theCustomers = studentDAO.searchStudent(theSearchName);
+        theModel.addAttribute("student", theCustomers);
+        return "studentsList";
+    }
+
 }

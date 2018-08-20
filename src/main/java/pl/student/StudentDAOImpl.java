@@ -198,4 +198,20 @@ public class StudentDAOImpl implements StudentDAO{
         Query theQuery = currentSession.createNativeQuery("truncate table student");
         theQuery.executeUpdate();
     }
+
+    @Override
+    @Transactional
+    public List<Student> searchStudent(String theSearchString) {
+        Session currentSession = sessionFactory.getCurrentSession();
+        Query theQuery = null;
+        if (theSearchString != null && theSearchString.trim().length() > 0) {
+            theQuery =currentSession.createQuery(
+                    "from Student where lower(firstName) like :theName or lower(lastName) like :theName", Student.class);
+            theQuery.setParameter("theName", "%" + theSearchString.toLowerCase() + "%");
+        } else {
+            theQuery =currentSession.createQuery("from Student ", Student.class);
+        }
+        List<Student> students = theQuery.getResultList();
+        return students;
+    }
 }

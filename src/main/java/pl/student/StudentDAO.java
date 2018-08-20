@@ -1,9 +1,5 @@
 package pl.student;
 
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.query.Query;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.multipart.MultipartFile;
 import pl.other.ListHolder;
@@ -36,5 +32,8 @@ public interface StudentDAO {
 
     /** Truncates/removes all rows from Student table */
     void truncateTable();
+
+    /** Search student by name/surname **/
+    List<Student> searchStudent(String searchString);
 
 }
