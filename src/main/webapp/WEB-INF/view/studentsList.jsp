@@ -16,12 +16,13 @@
 
     <h2>Students list</h2>
     <br>
-        <%--<p>--%>
-            <%--<form:form action="search" method="POST">--%>
-                <%--Search student: <input type="text" name="theSearchName" />--%>
-                <%--<input type="submit" value="Search" class="add-button" />--%>
-            <%--</form:form>--%>
-        <%--</p>--%>
+        <p>
+            <form:form action="search" method="POST">
+                Search student: <input type="text" name="theSearchName" />
+                <input type="submit" value="Search" class="add-button" />
+            </form:form>
+        </p>
+    <br>
 
     <form:form action="search" method="POST">
     Search student: <input type="text" name="theSearchName" />
@@ -31,6 +32,7 @@
         </form>
     </form:form>
 
+    <br>
 
 
         <form class="right_align" action="truncateStudentTable" method="post">
