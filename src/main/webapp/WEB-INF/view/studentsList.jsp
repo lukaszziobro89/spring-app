@@ -15,14 +15,24 @@
 <body>
 
     <h2>Students list</h2>
-    <br><br>
-        <p>
-            <form:form action="search" method="POST">
-                Search student: <input type="text" name="theSearchName" />
-                <input type="submit" value="Search" class="add-button" />
-            </form:form>
-        </p>
-    <br><br>
+    <br>
+        <%--<p>--%>
+            <%--<form:form action="search" method="POST">--%>
+                <%--Search student: <input type="text" name="theSearchName" />--%>
+                <%--<input type="submit" value="Search" class="add-button" />--%>
+            <%--</form:form>--%>
+        <%--</p>--%>
+
+    <form:form action="search" method="POST">
+    Search student: <input type="text" name="theSearchName" />
+        <form class="buttons">
+            <a href="search"><button type="button" class="btn info">Search student</button></a>
+            <br>
+        </form>
+    </form:form>
+
+
+
         <form class="right_align" action="truncateStudentTable" method="post">
             <input type="submit" class="btn danger" value="Truncate data (remove all rows)"
                    onclick="if (!confirm('Are you sure you want to delete all rows?')){return false}"/>

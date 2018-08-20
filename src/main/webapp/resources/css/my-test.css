@@ -84,6 +84,17 @@ form.right_align{
     color: white;
 }
 
+
+.search {
+    border-color: #c537ff;
+    color: #c537ff;
+}
+
+.search:hover {
+    background: #c537ff;
+    color: white;
+}
+
 /* Red */
 .danger {
     border-color: #f44336;
