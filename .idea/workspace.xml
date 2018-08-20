@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7eed35ba-a5eb-43f1-b369-1a289b9475d9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/studentsList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/studentsList.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="7eed35ba-a5eb-43f1-b369-1a289b9475d9" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -72,9 +70,10 @@
       <file leaf-file-name="studentsList.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/studentsList.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="39" column="31" lean-forward="true" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
+            <state relative-caret-position="238">
+              <caret line="20" column="34" lean-forward="true" selection-start-line="19" selection-start-column="77" selection-end-line="20" selection-end-column="34" />
               <folding>
+                <element signature="n#style#0;n#input#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#4;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -414,12 +413,12 @@
       <workItem from="1534535670381" duration="3886000" />
       <workItem from="1534605092626" duration="1862000" />
       <workItem from="1534664683045" duration="593000" />
-      <workItem from="1534760482490" duration="3667000" />
+      <workItem from="1534760482490" duration="3970000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87495000" />
+    <option name="totallyTimeSpent" value="87798000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1536" height="864" extended-state="0" />
@@ -852,9 +851,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/studentsList.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="39" column="31" lean-forward="true" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
+        <state relative-caret-position="238">
+          <caret line="20" column="34" lean-forward="true" selection-start-line="19" selection-start-column="77" selection-end-line="20" selection-end-column="34" />
           <folding>
+            <element signature="n#style#0;n#input#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#4;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>

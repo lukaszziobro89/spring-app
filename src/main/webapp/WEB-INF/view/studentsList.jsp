@@ -23,6 +23,10 @@
             </form>
         </form:form>
     <br>
+
+    <form class="center_align" action="showStudents" method="get"><input type="submit" value="Clear search filter"/></form>
+
+    <br>
         <form class="right_align" action="truncateStudentTable" method="post">
             <input type="submit" class="btn danger" value="Truncate data (remove all rows)"
                    onclick="if (!confirm('Are you sure you want to delete all rows?')){return false}"/>
