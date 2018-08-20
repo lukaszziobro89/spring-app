@@ -16,30 +16,13 @@
 
     <h2>Students list</h2>
     <br>
-        <p>
-            <form:form action="search" method="POST">
-                Search student: <input type="text" name="theSearchName" />
-                <input type="submit" value="Search" class="add-button" />
-            </form:form>
-        </p>
+        <form:form action="search" method="POST">
+        Search student: <input type="text" name="theSearchName" style="height:25px;" />
+            <form class="buttons">
+                <a href="search"><button type="submit" class="btn info">Search student</button></a>
+            </form>
+        </form:form>
     <br>
-
-    <form:form action="search" method="POST">
-    Search student: <input type="text" name="theSearchName" />
-        <form class="buttons">
-            <a href="search"><button type="submit" class="btn info">Search student</button></a>
-            <br>
-        </form>
-    </form:form>
-
-    <form class="left_align" action="search" method="post">
-        <input type="submit" class="btn search" value="Search student"/>
-    </form><br>
-
-
-    <br>
-
-
         <form class="right_align" action="truncateStudentTable" method="post">
             <input type="submit" class="btn danger" value="Truncate data (remove all rows)"
                    onclick="if (!confirm('Are you sure you want to delete all rows?')){return false}"/>
