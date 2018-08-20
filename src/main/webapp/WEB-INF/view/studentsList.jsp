@@ -27,10 +27,15 @@
     <form:form action="search" method="POST">
     Search student: <input type="text" name="theSearchName" />
         <form class="buttons">
-            <a href="search"><button type="button" class="btn info">Search student</button></a>
+            <a href="search"><button type="submit" class="btn info">Search student</button></a>
             <br>
         </form>
     </form:form>
+
+    <form class="left_align" action="search" method="post">
+        <input type="submit" class="btn search" value="Search student"/>
+    </form><br>
+
 
     <br>
 
